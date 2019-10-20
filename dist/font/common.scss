@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('/font/Avenir.ttc');
+}
+
+@font-face {
+  font-family: 'DIN-Medium';
+  src: url('/font/DIN-Medium.otf');
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  font-family: Avenir, DIN-Medium;
+  // overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-size: 12px;
+  color: rgba(108, 112, 120, 1);
+  text-decoration: none;
+}
+
+.wh_content {
+  height: 100%;
+}
+
+.wh_indicator_item {
+  background: rgba(216, 216, 216, 1);
+}
+
+.wh_show_bgcolor {
+  background: #b7b7b7;
+}
