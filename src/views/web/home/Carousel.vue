@@ -9,13 +9,13 @@
   <div class="Carousel">
     <div class="Carousel-right">
       <transition name="fade">
-        <img src="/images/carousel/1.png" alt="" srcset="" v-show='index==1'>
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/carousel/1.png" alt="" srcset="" v-show='index==1'>
       </transition>
       <transition name="fade">
-        <img src="/images/carousel/2.png" alt="" srcset="" v-show='index==2'>
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/carousel/2.png" alt="" srcset="" v-show='index==2'>
       </transition>
       <transition name="fade">
-        <img src="/images/carousel/3.png" alt="" srcset="" v-show='index==3'>
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/carousel/3.png" alt="" srcset="" v-show='index==3'>
       </transition>
       <div id="progress">
         <span :style="{width: loadWidth+'%'}"></span>
@@ -58,54 +58,54 @@
   </div>
 </template>
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 
-  @Component
-  export default class Carousel extends Vue {
-    private index = 1;
-    private Timer = null;
-    private loadWidth = 0;
-    private loadTimer = null;
+@Component
+export default class Carousel extends Vue {
+  private index = 1;
+  private Timer = null;
+  private loadWidth = 0;
+  private loadTimer = null;
 
-
-    private mounted() {
-      this.startTimer()
-    }
-
-    private ClickLeft() {
-      this.stopTimer();
-      this.index--;
-      if (this.index <= 0) {
-        this.index = 3;
-      }
-    }
-
-    private ClickRight() {
-      this.stopTimer();
+  public startTimer() {
+    this.Timer = setInterval(() => {
       this.index++;
+      this.loadWidth = 0;
       if (this.index >= 4) {
         this.index = 1;
       }
-    }
+    }, 5000);
 
-    startTimer() {
-      this.Timer = setInterval(() => {
-        this.index++;
-        this.loadWidth = 0;
-        if (this.index >= 4) {
-          this.index = 1;
-        }
-      }, 5000);
+    this.loadTimer = setInterval(() => {
+      this.loadWidth = this.loadWidth + 2;
+    }, 100);
+  }
 
-      this.loadTimer = setInterval(() => {
-        this.loadWidth = this.loadWidth + 2;
-      }, 100)
-    }
+  public stopTimer() {
+    this.loadWidth = 0;
+  }
 
-    stopTimer() {
-      this.loadWidth = 0;
+
+  private mounted() {
+    this.startTimer();
+  }
+
+  private ClickLeft() {
+    this.stopTimer();
+    this.index--;
+    if (this.index <= 0) {
+      this.index = 3;
     }
   }
+
+  private ClickRight() {
+    this.stopTimer();
+    this.index++;
+    if (this.index >= 4) {
+      this.index = 1;
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
   .Carousel {

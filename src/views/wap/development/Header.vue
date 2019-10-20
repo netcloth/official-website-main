@@ -41,22 +41,22 @@
   </div>
 </template>
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 
-  @Component({
-    components: {},
-  })
+@Component({
+  components: {},
+})
 
-  export default class devHeader extends Vue {
-    private GoRouter(val) {
-      if (val == 'github') {
-        window.open('https://github.com/NetCloth')
-      }
-      if (val == 'Chain') {
-        window.open('https://github.com/NetCloth/netcloth-chain')
-      }
+export default class devHeader extends Vue {
+  private GoRouter(val) {
+    if (val == 'github') {
+      window.open('https://github.com/NetCloth');
+    }
+    if (val == 'Chain') {
+      window.open('https://github.com/NetCloth/netcloth-chain');
     }
   }
+}
 </script>
 <style lang="scss" scoped>
   @import "../../../styles/index.scss";
@@ -68,7 +68,7 @@
       box-sizing: border-box;
       width: 100%;
       height: px2rem(450);
-      background-image: url('/images-wap/development/dev-header.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images-wap/development/dev-header.png');
       background-size: 100%;
       padding-top: px2rem(213);
     }
@@ -89,7 +89,7 @@
       &-header {
         width: px2rem(88);
         height: px2rem(23);
-        background-image: url('/images-wap/development/line-red.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images-wap/development/line-red.png');
         background-size: 100%;
       }
 
@@ -174,7 +174,7 @@
           float: right;
           width: px2rem(32);
           height: px2rem(26);
-          background-image: url('/images-wap/development/golook.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images-wap/development/golook.png');
           background-size: 100%;
         }
       }

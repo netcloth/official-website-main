@@ -129,23 +129,23 @@
   </div>
 </template>
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
-  import { UserModule } from '@/store/modules/user';
+import { Component, Vue } from 'vue-property-decorator';
+import { UserModule } from '@/store/modules/user';
 
-  @Component
-  export default class EcosystemCentent extends Vue {
-    private check = 'user'
-    private ChangeSelected(val) {
-      this.check = val;
-    }
+@Component
+export default class EcosystemCentent extends Vue {
 
-    get language() {
-      return UserModule.language
-    }
-    GoRouter() {
-      window.open('http://chat-app.netcloth.org');
-    }
+  get language() {
+    return UserModule.language;
   }
+  private check = 'user';
+  public GoRouter() {
+    window.open('http://chat-app.netcloth.org');
+  }
+  private ChangeSelected(val) {
+    this.check = val;
+  }
+}
 </script>
 <style lang="scss" scoped>
   @import "../../../styles/index.scss";

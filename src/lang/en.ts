@@ -91,7 +91,7 @@ export default {
     development: {
         title: 'Developer Portal',
         leftTitle: 'Technical Documents',
-        leftMessage: "NetCloth Chain is a public blockchain. You're warmly welcomed to Custom the infrastructure or develop Dapps based on NetCloth Chain.",
+        leftMessage: 'NetCloth Chain is a public blockchain. You\'re warmly welcomed to Custom the infrastructure or develop Dapps based on NetCloth Chain.',
         leftBtn: 'Developing...',
         rightTitleO: 'Testnet',
         rightMessageO: 'How to deploy testnet?',
@@ -101,7 +101,7 @@ export default {
     },
     EcosystemHeader: {
         title: 'Ecosystem',
-        message: "NetCloth's solutions, networking architecture, and application ecosystem",
+        message: 'NetCloth\'s solutions, networking architecture, and application ecosystem',
     },
     EcosystemSolu: {
         title: 'Solutions',
@@ -112,7 +112,7 @@ export default {
         titleS: 'Trusted Computing',
         messageS: 'NetCloth customizes different trusted computing technology solutions based on specific scenarios to calculate data while protecting privacy of data producers.',
         titleF: 'Trusted Storage',
-        messageF: "The user's public key is used to encrypt data, in addition to data encryption storage, but also to set scope of data sharing: local storage, cluster storage, distributed storage.",
+        messageF: 'The user\'s public key is used to encrypt data, in addition to data encryption storage, but also to set scope of data sharing: local storage, cluster storage, distributed storage.',
         titleV: 'Trusted Computing',
         messageV: 'NetCloth customizes different trusted computing technology solutions based on specific scenarios to calculate data while protecting privacy of data producers.',
         titleE: 'Third-party Sidechains',
@@ -121,13 +121,13 @@ export default {
     EcosystemArch: {
         title: 'Network Architecture',
         titleO: 'User',
-        messageO: "Users are producers of network value, but also consumer of it who can use NetCloth's data management tools to manage their personal data through terminal access network and also can experience various applications within ecosystem.",
+        messageO: 'Users are producers of network value, but also consumer of it who can use NetCloth\'s data management tools to manage their personal data through terminal access network and also can experience various applications within ecosystem.',
         titleT: 'Application',
         messageT: 'The application layer will host all NetCloth-based Dapps, including but not limited to game, social communications, financial applications, and more.',
         titleS: 'Node',
         messageS: 'Nodes are servers that provides services to the network and responsible for operating various application scenarios, providing users all kinds of resources. The top 100 nodes by voting will become the witness nodes responsible for validating transactions and maintaining blockchain ledgers.',
         titleF: 'Infrastructure',
-        messageF: "NetCloth's blockchain infrastructure is underlying network of whole system, providing technical support for whole system. The transaction ledger records asset information and transaction records of the network and protects the security of the assets. IPAL records the IP of service node to which each user terminal is connected as a common node for user communication.",
+        messageF: 'NetCloth\'s blockchain infrastructure is underlying network of whole system, providing technical support for whole system. The transaction ledger records asset information and transaction records of the network and protects the security of the assets. IPAL records the IP of service node to which each user terminal is connected as a common node for user communication.',
     },
     EcosystemApp: {
         title: 'Applications',

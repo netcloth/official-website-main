@@ -98,31 +98,31 @@
       .One {
         width: 75px;
         height: 70px;
-        background-image: url('/images/Advantage/one.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/Advantage/one.png');
       }
 
       .Two {
         width: 71px;
         height: 71px;
-        background-image: url('/images/Advantage/two.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/Advantage/two.png');
       }
 
       .Three {
         width: 62px;
         height: 70px;
-        background-image: url('/images/Advantage/three.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/Advantage/three.png');
       }
 
       .Four {
         width: 69px;
         height: 70px;
-        background-image: url('/images/Advantage/four.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/Advantage/four.png');
       }
 
       .Five {
         width: 66px;
         height: 75px;
-        background-image: url('/images/Advantage/five.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/Advantage/five.png');
       }
 
       .Advantage-centent-title {

@@ -9,7 +9,7 @@
   <div class="footer">
     <div class="footer-top">
       <div class="footer-logo">
-        <img src="/images-wap/footer/footer-logo.png">
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images-wap/footer/footer-logo.png">
       </div>
       <div class="footer-centent">
         <div class="footer_project">
@@ -169,22 +169,22 @@
     }
 
     .footer-medium {
-      background: url('/images-wap/footer/medium.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images-wap/footer/medium.png');
       background-size: 100%;
     }
 
     .footer-twier {
-      background: url('/images-wap/footer/twier.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images-wap/footer/twier.png');
       background-size: 100%;
     }
 
     .footer-github {
-      background: url('/images-wap/footer/github.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images-wap/footer/github.png');
       background-size: 100%;
     }
 
     .footer-wordpress {
-      background: url('/images/footer/wordpress.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/footer/wordpress.png');
       background-size: 100%;
 
     }
