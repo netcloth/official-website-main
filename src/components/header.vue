@@ -35,7 +35,7 @@ import { UserModule } from '../store/modules/user';
 
 @Component
 export default class Header extends Vue {
-  @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/header/nav-logo.png' }) public readonly imgSrc!: string;
+  @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/header/nav-logo.png' }) public readonly imgSrc!: string;
   @Prop({ default: '#ffffff' }) public readonly Pcolor!: string;
   // methods
   private ChangLang(value: string): void {

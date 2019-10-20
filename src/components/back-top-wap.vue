@@ -60,12 +60,12 @@ export default class BackTop extends Vue {
     height: px2rem(163);
     cursor: pointer;
     z-index: 99;
-    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/home/top.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/home/top.png');
     background-size: 100%;
     background-repeat: no-repeat;
   }
 
   .go-top:hover {
-    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.1/dist/images/home/top-hover.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/home/top-hover.png');
   }
 </style>
