@@ -53,7 +53,7 @@
     box-sizing: border-box;
     height: 667px;
     text-align: center;
-    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.4/dist/images/technical/Technical.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.5/dist/images/technical/Technical.png');
     background-size: 100%;
     opacity: 0.9479000000000001;
     padding-top: 100px;
@@ -83,15 +83,15 @@
       }
 
       .One {
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.4/dist/images/technical/X.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.5/dist/images/technical/X.png');
       }
 
       .Two {
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.4/dist/images/technical/G.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.5/dist/images/technical/G.png');
       }
 
       .Three {
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.4/dist/images/technicalk.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.5/dist/images/technical/k.png');
       }
 
       .Technical-centent-title {
