@@ -9,7 +9,7 @@
   <div class="footer">
     <div class="footer-top">
       <div class="footer-logo">
-        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.5/dist/images-wap/footer/footer-logo.png">
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images-wap/footer/footer-logo.png">
       </div>
       <div class="footer-centent">
         <div class="footer_project">
@@ -80,7 +80,7 @@
         window.open('https://blog.netcloth.org');
       }
       if (val == 'app') {
-        window.open('http://chat.netcloth.org');
+        window.open('http://chat-app.netcloth.org');
       }
     }
 
@@ -169,22 +169,22 @@
     }
 
     .footer-medium {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.5/dist/images-wap/footer/medium.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images-wap/footer/medium.png');
       background-size: 100%;
     }
 
     .footer-twier {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.5/dist/images-wap/footer/twier.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images-wap/footer/twier.png');
       background-size: 100%;
     }
 
     .footer-github {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.5/dist/images-wap/footer/github.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images-wap/footer/github.png');
       background-size: 100%;
     }
 
     .footer-wordpress {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.5/dist/images/footer/wordpress.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/footer/wordpress.png');
       background-size: 100%;
 
     }

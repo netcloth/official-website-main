@@ -8,7 +8,7 @@
 <template>
   <div class="homeHeader">
     <canvas id='canvas'></canvas>
-    <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.5/dist/images-wap/home/Moon.png" class="homeHeader-img">
+    <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images-wap/home/Moon.png" class="homeHeader-img">
     <div class="homeHeader-logo"></div>
     <div class="homeHeader-centent">
       <div class="homeHeader-content-title">NetCloth</div>
@@ -169,7 +169,7 @@
     .homeHeader-logo {
       width: px2rem(133);
       height: px2rem(100);
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.5/dist/images-wap/home/logo.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images-wap/home/logo.png');
       background-repeat: no-repeat;
       background-size: 100%;
       position: absolute;
