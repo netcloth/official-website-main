@@ -3,7 +3,7 @@
  * @Date: 2019-09-23 17:24:07
  * @Author: 黄龙
  * @LastEditors: 黄龙
- * @LastEditTime: 2019-10-13 16:04:17
+ * @LastEditTime: 2019-10-21 14:29:04
  -->
 <template>
   <div class="header">
@@ -23,11 +23,11 @@
       <div class="header-menu-open" v-show='isOpen'>
         <div class="header-menu">
           <div class="header-menu-btn header-menu-btn-close" @click='Open'>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/header/menu-close.png">
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/header/menu-close.png">
           </div>
         </div>
         <div class="header-logo">
-          <router-link to="/"><img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/header/nav-logo.png"></router-link>
+          <router-link to="/"><img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/header/nav-logo.png"></router-link>
         </div>
         <div class="header-btn">
           <span class="btn-en" @click='ChangLang("en")' v-if='language=="zh"'>EN</span>
@@ -50,43 +50,48 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import { UserModule } from '../store/modules/user';
+  import { Component, Prop, Vue } from 'vue-property-decorator';
+  import { UserModule } from '../store/modules/user';
 
-@Component
-export default class Header extends Vue {
-  @Prop({
-    default() {
-      return {
-        imgSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/header/nav-logo.png',
-        menuSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/header/menu.png',
-        menuCloseSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/header/menu-close.png',
-      };
-    },
-  }) public readonly logoUrl!: Object;
-  @Prop({ default: '#ffffff' }) public readonly Pcolor!: string;
-  private language = 'zh';
-  private isOpen = false;
-  // methods
-  private ChangLang(value: string): void {
-    UserModule.ResetLanguage(value);
-    localStorage.setItem('language', value);
-    this.$i18n.locale = value;
-    this.language = value;
-  }
+  @Component
+  export default class Header extends Vue {
+    private isOpen = false;
+    @Prop({
+      default: function () {
+        return {
+          imgSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/header/nav-logo.png',
+          menuSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/header/menu.png',
+          menuCloseSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/header/menu-close.png',
+        }
+      }
+    }) readonly logoUrl!: Object;
+    @Prop({ default: '#ffffff' }) readonly Pcolor!: string;
 
-  private Open() {
-    this.isOpen = !this.isOpen;
-  }
+    get language() {
+      return UserModule.language;
+    }
 
-  private GoBlog() {
-    if (this.$i18n.locale == 'zh') {
-      window.open('https://blog.netcloth.org');
-    } else {
-      window.open('https://medium.com/@NetCloth');
+    // methods
+    private ChangLang(value: string): void {
+      UserModule.ResetLanguage(value);
+      localStorage.setItem('language', value);
+      this.$i18n.locale = value;
+      this.language = value;
+      window.location.reload();
+    }
+
+    private Open() {
+      this.isOpen = !this.isOpen;
+    }
+
+    private GoBlog() {
+      if (this.language == 'zh') {
+        window.open('https://blog.netcloth.org');
+      } else {
+        window.open('https://medium.com/@NetCloth');
+      }
     }
   }
-}
 </script>
 <style lang="scss" scoped>
   @import "../../src/styles/index.scss";

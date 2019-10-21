@@ -3,7 +3,7 @@
  * @Date: 2019-09-22 14:41:36
  * @Author: 黄龙
  * @LastEditors: 黄龙
- * @LastEditTime: 2019-10-14 17:59:10
+ * @LastEditTime: 2019-10-21 18:05:44
  */
 export default {
     header: {
@@ -31,7 +31,7 @@ export default {
         title: 'NetCloth网络拥有的特点与优势',
         titleO: '数据驱动',
         messageO: 'NetCloth围绕数据搭建网络架构，将互联网从场景驱动数据升级为数据驱动场景。',
-        titleT: '隐藏保护',
+        titleT: '隐私保护',
         messageT: 'NetCloth网络加密账户与身份、加密传输、加密存储，且可定制可信计算解决方案。',
         titleS: '第三方侧链监管',
         messageS: 'NetCloth提供第三方侧链设施，其作为联盟链，可验证数据真实性，并进行监管。',

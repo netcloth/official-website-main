@@ -3,7 +3,7 @@
  * @Date: 2019-09-26 17:00:58
  * @Author: 黄龙
  * @LastEditors: 黄龙
- * @LastEditTime: 2019-10-14 18:03:25
+ * @LastEditTime: 2019-10-21 17:19:04
  -->
 <template>
   <div class="Ecosystem-centent">
@@ -52,28 +52,28 @@
         <div class="Ecosystem-architecture-center-left">
           <div :class="[{ 'selected': check=='user' }, 'Ecosystem-architecture-center-left-centet']" @click='ChangeSelected("user")'>
             <span>{{$t('EcosystemArch.titleO')}}</span>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/user.png" width="336px">
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/user.png" width="336px">
           </div>
           <div :class="[{ 'selected': check=='application' }, 'Ecosystem-architecture-center-left-centet']" @click='ChangeSelected("application")'>
             <span>{{$t('EcosystemArch.titleT')}}</span>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/application.png" v-show='language=="zh"'>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/application-en.png" v-show='language=="en"'>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/application.png" v-show='language=="zh"'>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/application-en.png" v-show='language=="en"'>
           </div>
           <div :class="[{ 'selected': check=='nodeLayer' }, 'Ecosystem-architecture-center-left-centet']" @click='ChangeSelected("nodeLayer")'>
             <span>{{$t('EcosystemArch.titleS')}}</span>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/nodeLayer.png" v-show='language=="zh"'>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/nodeLayer-en.png" v-show='language=="en"'>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/nodeLayer.png" v-show='language=="zh"'>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/nodeLayer-en.png" v-show='language=="en"'>
           </div>
           <div :class="[{ 'selected': check=='basic' }, 'Ecosystem-architecture-center-left-centet']" @click='ChangeSelected("basic")'>
             <span>{{$t('EcosystemArch.titleF')}}</span>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/basic.png" v-show='language=="zh"'>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/basic-en.png" v-show='language=="en"'>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/basic.png" v-show='language=="zh"'>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/basic-en.png" v-show='language=="en"'>
           </div>
         </div>
         <div class="Ecosystem-architecture-center-right">
           <div class="Ecosystem-architecture-center-right-center" v-show='check=="user"'>
             <div class="Ecosystem-architecture-center-right-center-t">
-              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/user-phone.png" alt="" srcset="">
+              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/user-phone.png" alt="" srcset="">
             </div>
             <div class="Ecosystem-architecture-center-right-center-title">
               {{$t('EcosystemArch.titleO')}}
@@ -82,12 +82,12 @@
               {{$t('EcosystemArch.messageO')}}
             </div>
             <div class="Ecosystem-architecture-center-right-center-b">
-              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/user.png" width="200px">
+              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/user.png" width="200px">
             </div>
           </div>
           <div class="Ecosystem-architecture-center-right-center" v-show='check=="application"'>
             <div class="Ecosystem-architecture-center-right-center-t">
-              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/application-phone.png" alt="" srcset="">
+              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/application-phone.png" alt="" srcset="">
             </div>
             <div class="Ecosystem-architecture-center-right-center-title">
               {{$t('EcosystemArch.titleT')}}
@@ -96,13 +96,13 @@
               {{$t('EcosystemArch.messageT')}}
             </div>
             <div class="Ecosystem-architecture-center-right-center-b">
-              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/application.png" width="200px" v-show='language=="zh"'>
-              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/application-en.png" width="200px" v-show='language=="en"'>
+              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/application.png" width="200px" v-show='language=="zh"'>
+              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/application-en.png" width="200px" v-show='language=="en"'>
             </div>
           </div>
           <div class="Ecosystem-architecture-center-right-center" v-show='check=="nodeLayer"'>
             <div class="Ecosystem-architecture-center-right-center-t">
-              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/nodeLayer-phone.png" alt="" srcset="">
+              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/nodeLayer-phone.png" alt="" srcset="">
             </div>
             <div class="Ecosystem-architecture-center-right-center-title">
               {{$t('EcosystemArch.titleS')}}
@@ -111,13 +111,13 @@
               {{$t('EcosystemArch.messageS')}}
             </div>
             <div class="Ecosystem-architecture-center-right-center-b">
-              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/nodeLayer.png" height="44px" v-show='language=="zh"'>
-              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/nodeLayer-en.png" height="44px" v-show='language=="en"'>
+              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/nodeLayer.png" height="44px" v-show='language=="zh"'>
+              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/nodeLayer-en.png" height="44px" v-show='language=="en"'>
             </div>
           </div>
           <div class="Ecosystem-architecture-center-right-center" v-show='check=="basic"'>
             <div class="Ecosystem-architecture-center-right-center-t">
-              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/basic-phone.png" alt="" srcset="">
+              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/basic-phone.png" alt="" srcset="">
             </div>
             <div class="Ecosystem-architecture-center-right-center-title">
               {{$t('EcosystemArch.titleF')}}
@@ -126,8 +126,8 @@
               {{$t('EcosystemArch.messageF')}}
             </div>
             <div class="Ecosystem-architecture-center-right-center-b">
-              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/basic.png" width="200px" v-show='language=="zh"'>
-              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/basic-en.png" width="200px" v-show='language=="en"'>
+              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/basic.png" width="200px" v-show='language=="zh"'>
+              <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/basic-en.png" width="200px" v-show='language=="en"'>
             </div>
           </div>
         </div>
@@ -156,23 +156,23 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import { UserModule } from '@/store/modules/user';
+  import { Component, Vue } from 'vue-property-decorator';
+  import { UserModule } from '@/store/modules/user';
 
-@Component
-export default class EcosystemCentent extends Vue {
+  @Component
+  export default class EcosystemCentent extends Vue {
+    private check = 'user'
+    private ChangeSelected(val) {
+      this.check = val;
+    }
 
-  get language() {
-    return UserModule.language;
+    get language() {
+      return UserModule.language;
+    }
+    GoRouter() {
+      window.open('http://chat.netcloth.org');
+    }
   }
-  private check = 'user';
-  public GoRouter() {
-    window.open('http://chat.netcloth.org');
-  }
-  private ChangeSelected(val) {
-    this.check = val;
-  }
-}
 </script>
 <style lang="scss" scoped>
   .Ecosystem-centent {
@@ -182,7 +182,7 @@ export default class EcosystemCentent extends Vue {
     .Ecosystem-header {
       height: 500px;
       text-align: center;
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/bg.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/bg.png');
       padding-top: 227px;
 
       &-title {
@@ -245,27 +245,27 @@ export default class EcosystemCentent extends Vue {
         }
 
         .account {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/account.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/account.png');
         }
 
         .encryption {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/encryption.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/encryption.png');
         }
 
         .Blockchain {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/Blockchain.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/Blockchain.png');
         }
 
         .trustworthy {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/trustworthy.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/trustworthy.png');
         }
 
         .calculation {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/calculation.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/calculation.png');
         }
 
         .link {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/link.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/link.png');
         }
 
         &-centent {
@@ -337,7 +337,7 @@ export default class EcosystemCentent extends Vue {
           padding: 16px;
           padding-top: 73px;
           padding-left: 124px;
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/phone.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/phone.png');
           background-size: 100%;
 
           &-center {
@@ -408,7 +408,7 @@ export default class EcosystemCentent extends Vue {
           text-align: left;
           border-radius: 12px;
           box-shadow: 0px 5px 5px 0px rgba(232, 234, 240, 0.75);
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/NetCloth-APP.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/NetCloth-APP.png');
 
           span {
             display: block;
@@ -437,14 +437,14 @@ export default class EcosystemCentent extends Vue {
           width: 340px;
           height: 400px;
           border-radius: 12px;
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/js1.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/js1.png');
         }
 
         .js2 {
           width: 340px;
           height: 400px;
           border-radius: 12px;
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/ecosystem/js2.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/ecosystem/js2.png');
         }
 
         .js1,

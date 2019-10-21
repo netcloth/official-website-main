@@ -3,13 +3,13 @@
  * @Date: 2019-09-23 15:05:10
  * @Author: 黄龙
  * @LastEditors: 黄龙
- * @LastEditTime: 2019-10-14 18:02:05
+ * @LastEditTime: 2019-10-21 17:18:45
  -->
 <template>
   <div class="footer">
     <div class="footer-top">
       <div class="footer-logo">
-        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/footer/footer-logo.png">
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/footer/footer-logo.png">
       </div>
       <div class="footer-centent">
         <div class="footer_project">
@@ -80,7 +80,7 @@
         window.open('https://blog.netcloth.org');
       }
       if (val == 'app') {
-        window.open('http://chat-app.netcloth.org');
+        window.open('http://chat.netcloth.org');
       }
     }
 
@@ -169,22 +169,22 @@
     }
 
     .footer-medium {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/footer/medium.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/footer/medium.png');
       background-size: 100%;
     }
 
     .footer-twier {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/footer/twier.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/footer/twier.png');
       background-size: 100%;
     }
 
     .footer-github {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/footer/github.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/footer/github.png');
       background-size: 100%;
     }
 
     .footer-wordpress {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/footer/wordpress.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/footer/wordpress.png');
       background-size: 100%;
 
     }

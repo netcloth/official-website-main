@@ -3,7 +3,7 @@
  * @Date: 2019-09-28 19:32:33
  * @Author: 黄龙
  * @LastEditors: 黄龙
- * @LastEditTime: 2019-10-15 10:36:11
+ * @LastEditTime: 2019-10-20 19:15:33
  */
 module.exports = {
   /** 区分打包环境与开发环境
@@ -46,7 +46,7 @@ module.exports = {
   devServer: {
     open: process.platform === "darwin",
     disableHostCheck: false,
-    host: "localhost",
+    host: "0.0.0.0",
     port: 8088,
     https: false,
     hotOnly: false,

@@ -16,21 +16,21 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import Header from '@/components/header-wap.vue'; // 头部导航
-import EcosystemCentent from './ecosystem-centent.vue';
-import Footer from '@/components/footer-wap.vue'; // 底部通用导航
-import BackTop from '@/components/back-top-wap.vue'; // 返回顶部
+  import { Component, Vue } from 'vue-property-decorator';
+  import Header from '@/components/header-wap.vue'; // 头部导航
+  import EcosystemCentent from './ecosystem-centent.vue'
+  import Footer from '@/components/footer-wap.vue'; // 底部通用导航
+  import BackTop from '@/components/back-top-wap.vue'; // 返回顶部
 
-@Component({
-  components: {
-    Header,
-    EcosystemCentent,
-    Footer,
-    BackTop,
-  },
-})
-export default class Ecosystem extends Vue {}
+  @Component({
+    components: {
+      Header,
+      EcosystemCentent,
+      Footer,
+      BackTop,
+    }
+  })
+  export default class Ecosystem extends Vue {}
 </script>
 <style lang="scss" scoped>
   @import "../../../styles/index.scss";

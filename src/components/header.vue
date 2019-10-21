@@ -30,27 +30,27 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import { UserModule } from '../store/modules/user';
+  import { Component, Prop, Vue } from 'vue-property-decorator';
+  import { UserModule } from '../store/modules/user';
 
-@Component
-export default class Header extends Vue {
-  @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/header/nav-logo.png' }) public readonly imgSrc!: string;
-  @Prop({ default: '#ffffff' }) public readonly Pcolor!: string;
-  // methods
-  private ChangLang(value: string): void {
-    UserModule.ResetLanguage(value);
-    localStorage.setItem('language', value);
-    this.$i18n.locale = value;
-  }
-  private GoBlog() {
-    if (this.$i18n.locale == 'zh') {
-      window.open('https://blog.netcloth.org');
-    } else {
-      window.open('https://medium.com/@NetCloth');
+  @Component
+  export default class Header extends Vue {
+    @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/header/nav-logo.png' }) readonly imgSrc!: string;
+    @Prop({ default: '#ffffff' }) readonly Pcolor!: string;
+    // methods
+    private ChangLang(value: string): void {
+      UserModule.ResetLanguage(value);
+      localStorage.setItem('language', value);
+      this.$i18n.locale = value;
+    }
+    private GoBlog() {
+      if (this.$i18n.locale == 'zh') {
+        window.open('https://blog.netcloth.org');
+      } else {
+        window.open('https://medium.com/@NetCloth');
+      }
     }
   }
-}
 </script>
 <style lang="scss" scoped>
   .header {

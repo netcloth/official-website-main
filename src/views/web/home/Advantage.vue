@@ -3,7 +3,7 @@
  * @Date: 2019-09-25 20:44:22
  * @Author: 黄龙
  * @LastEditors: 黄龙
- * @LastEditTime: 2019-10-14 17:54:35
+ * @LastEditTime: 2019-10-21 13:54:45
  -->
 <template>
   <div class="Advantage">
@@ -37,9 +37,9 @@
       <ul>
         <li>
           <div class="Advantage-centent-img Four"></div>
-          <div class="Advantage-centent-title">{{$t('Advantage.titleO')}}</div>
+          <div class="Advantage-centent-title">{{$t('Advantage.titleF')}}</div>
           <div class="Advantage-centent-message">
-            {{$t('Advantage.messageO')}}
+            {{$t('Advantage.messageF')}}
           </div>
         </li>
         <li>
@@ -98,31 +98,31 @@
       .One {
         width: 75px;
         height: 70px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/Advantage/one.png');
+        background-image: url('/images/Advantage/one.png');
       }
 
       .Two {
         width: 71px;
         height: 71px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/Advantage/two.png');
+        background-image: url('/images/Advantage/two.png');
       }
 
       .Three {
         width: 62px;
         height: 70px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/Advantage/three.png');
+        background-image: url('/images/Advantage/three.png');
       }
 
       .Four {
         width: 69px;
         height: 70px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/Advantage/four.png');
+        background-image: url('/images/Advantage/four.png');
       }
 
       .Five {
         width: 66px;
         height: 75px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/Advantage/five.png');
+        background-image: url('/images/Advantage/five.png');
       }
 
       .Advantage-centent-title {

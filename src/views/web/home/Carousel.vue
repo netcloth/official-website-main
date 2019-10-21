@@ -3,22 +3,22 @@
  * @Date: 2019-09-25 14:18:28
  * @Author: 黄龙
  * @LastEditors: 黄龙
- * @LastEditTime: 2019-10-17 10:51:05
+ * @LastEditTime: 2019-10-21 17:46:44
  -->
 <template>
   <div class="Carousel">
     <div class="Carousel-right">
       <transition name="fade">
-        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/carousel/1.png" alt="" srcset="" v-show='index==1'>
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/carousel/1.png" alt="" srcset="" v-show='index==1'>
       </transition>
       <transition name="fade">
-        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/carousel/2.png" alt="" srcset="" v-show='index==2'>
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/carousel/2.png" alt="" srcset="" v-show='index==2'>
       </transition>
       <transition name="fade">
-        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images/carousel/3.png" alt="" srcset="" v-show='index==3'>
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images/carousel/3.png" alt="" srcset="" v-show='index==3'>
       </transition>
       <div id="progress">
-        <span :style="{width: loadWidth+'%'}"></span>
+        <span :style="[Width]"></span>
       </div>
     </div>
     <div class="Carousel-left">
@@ -58,54 +58,59 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+  import { Component, Vue } from 'vue-property-decorator';
 
-@Component
-export default class Carousel extends Vue {
-  private index = 1;
-  private Timer = null;
-  private loadWidth = 0;
-  private loadTimer = null;
+  @Component
+  export default class Carousel extends Vue {
+    private index = 1;
+    private Timer = null;
+    private loadWidth = 0;
+    private loadTimer = null;
+    private Width = {
+      "width": "0%",
+    };
 
-  public startTimer() {
-    this.Timer = setInterval(() => {
+
+    private mounted() {
+      this.startTimer()
+    }
+
+    private ClickLeft() {
+      this.stopTimer();
+      this.index--;
+      if (this.index <= 0) {
+        this.index = 3;
+      }
+    }
+
+    private ClickRight() {
+      this.stopTimer();
       this.index++;
-      this.loadWidth = 0;
       if (this.index >= 4) {
         this.index = 1;
       }
-    }, 5000);
+    }
 
-    this.loadTimer = setInterval(() => {
-      this.loadWidth = this.loadWidth + 2;
-    }, 100);
-  }
+    startTimer() {
+      this.loadTimer = setInterval(() => {
+        this.loadWidth++;
+        this.Width = {
+          "width": this.loadWidth + '%',
+        }
+        if (this.loadWidth > 100) {
+          this.loadWidth = 0;
+          this.index++;
+          if (this.index >= 4) {
+            this.index = 1;
+          }
+        }
+      }, 100)
+    }
 
-  public stopTimer() {
-    this.loadWidth = 0;
-  }
-
-
-  private mounted() {
-    this.startTimer();
-  }
-
-  private ClickLeft() {
-    this.stopTimer();
-    this.index--;
-    if (this.index <= 0) {
-      this.index = 3;
+    stopTimer() {
+      this.loadWidth = 0;
     }
   }
-
-  private ClickRight() {
-    this.stopTimer();
-    this.index++;
-    if (this.index >= 4) {
-      this.index = 1;
-    }
-  }
-}
 </script>
 <style lang="scss" scoped>
   .Carousel {

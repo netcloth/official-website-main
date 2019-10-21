@@ -63,7 +63,7 @@ if (flag) {
 
 export default new Router({
   scrollBehavior: () => ({
-    y: 0,
+    y: 0
   }),
-  routes: rouMap,
+  routes: rouMap
 });

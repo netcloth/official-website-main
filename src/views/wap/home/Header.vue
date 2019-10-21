@@ -8,7 +8,7 @@
 <template>
   <div class="homeHeader">
     <canvas id='canvas'></canvas>
-    <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/home/Moon.png" class="homeHeader-img">
+    <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/home/Moon.png" class="homeHeader-img">
     <div class="homeHeader-logo"></div>
     <div class="homeHeader-centent">
       <div class="homeHeader-content-title">NetCloth</div>
@@ -25,129 +25,129 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+  import { Component, Vue } from 'vue-property-decorator';
 
-@Component({
-  components: {},
-})
+  @Component({
+    components: {},
+  })
 
-export default class HomeHeader extends Vue {
-  private mounted() {
-    this.EachList();
-  }
-  private EachList() {
-    const can = document.getElementById('canvas');
-    const cxt = can.getContext('2d');
-
-    const w = can.width = window.innerWidth;
-    const h = can.height = window.innerHeight;
-
-    const num = 150; // 生成点的个数
-    const data = []; // 定义一个数组，准备用来存坐标
-    const move = {};
-    const liuXY = [];
-    const k = -1;
-    const range = Math.atan(k);
-    const length = 200;
-
-    // 生成num个点，并且存储初始坐标
-    for (let i = 0; i < num; i++) {
-      data[i] = {
-        x: Math.random() * w,
-        y: Math.random() * h,
-        r: Math.random() * 8 + 3,
-      };
-      Cricle(data[i].x, data[i].y, data[i].r);
+  export default class HomeHeader extends Vue {
+    private mounted() {
+      this.EachList();
     }
+    private EachList() {
+      var can = document.getElementById('canvas');
+      var cxt = can.getContext('2d');
 
-    ! function draw() {
-      cxt.clearRect(0, 0, w, h);
+      var w = can.width = window.innerWidth;
+      var h = can.height = window.innerHeight;
+
+      const num = 150; // 生成点的个数
+      const data = []; // 定义一个数组，准备用来存坐标
+      const move = {};
+      const liuXY = [];
+      let k = -1;
+      const range = Math.atan(k);
+      const length = 200;
+
+      // 生成num个点，并且存储初始坐标
       for (let i = 0; i < num; i++) {
-        data[i].r += Math.random() * 2 - 1;
-        data[i].r = Math.max(0, data[i].r);
-        data[i].r = Math.min(12, data[i].r);
+        data[i] = {
+          x: Math.random() * w,
+          y: Math.random() * h,
+          r: Math.random() * 8 + 3
+        };
         Cricle(data[i].x, data[i].y, data[i].r);
-      }
-      if (liuXY.length) {
-        for (const i in liuXY) {
-          liuXY[i].cX -= 10;
-          liuX(liuXY[i].cX, liuXY[i].y, liuXY[i].x);
-          if (liuXY[i].cX < 0 || getY(liuXY[i].cX, liuXY[i].y, liuXY[i].x) > h) {
-            liuXY.splice(i, 1);
+      };
+
+      ! function draw() {
+        cxt.clearRect(0, 0, w, h);
+        for (var i = 0; i < num; i++) {
+          data[i].r += Math.random() * 2 - 1;
+          data[i].r = Math.max(0, data[i].r);
+          data[i].r = Math.min(12, data[i].r);
+          Cricle(data[i].x, data[i].y, data[i].r);
+        };
+        if (liuXY.length) {
+          for (const i in liuXY) {
+            liuXY[i].cX -= 10;
+            liuX(liuXY[i].cX, liuXY[i].y, liuXY[i].x);
+            if (liuXY[i].cX < 0 || getY(liuXY[i].cX, liuXY[i].y, liuXY[i].x) > h) {
+              liuXY.splice(i, 1);
+            }
           }
         }
-      }
 
-      if (Math.random() > 0.98) {
-        const a = Math.random() * (w - 400) + 400;
-        liuXY.push({
-          x: a,
-          y: 0,
-          cX: a,
-        });
-      }
-      window.requestAnimationFrame(draw);
-    }();
+        if (Math.random() > 0.98) {
+          let a = Math.random() * (w - 400) + 400;
+          liuXY.push({
+            x: a,
+            y: 0,
+            cX: a
+          });
+        };
+        window.requestAnimationFrame(draw);
+      }();
 
-    function liuX(x: any, sX: any, sY: any) {
-      cxt.save();
-      const y = getY(x, sY, sX);
-      const r = 15;
-      const rad = cxt.createRadialGradient(x, y, 0, x, y, r);
-      rad.addColorStop(0, 'rgba(255,255,255,0.8)');
-      rad.addColorStop(0.1, 'rgba(255,255,255,0.8)');
-      rad.addColorStop(0.2, 'rgba(255,255,255,0.08)');
-      rad.addColorStop(1, 'rgba(255,255,255,0)');
-      cxt.fillStyle = rad;
-      cxt.beginPath();
-      cxt.arc(x, y, r, 0, 2 * Math.PI, true);
-      cxt.closePath();
-      cxt.fill();
-      cxt.restore();
+      function liuX(x: any, sX: any, sY: any) {
+        cxt.save();
+        var y = getY(x, sY, sX);
+        var r = 15;
+        var rad = cxt.createRadialGradient(x, y, 0, x, y, r);
+        rad.addColorStop(0, 'rgba(255,255,255,0.8)');
+        rad.addColorStop(0.1, 'rgba(255,255,255,0.8)');
+        rad.addColorStop(0.2, 'rgba(255,255,255,0.08)');
+        rad.addColorStop(1, 'rgba(255,255,255,0)');
+        cxt.fillStyle = rad;
+        cxt.beginPath();
+        cxt.arc(x, y, r, 0, 2 * Math.PI, true);
+        cxt.closePath();
+        cxt.fill();
+        cxt.restore();
 
-      const wX = x + (Math.cos(range) * length);
-      const wY = y + (Math.sin(range) * length);
+        const wX = x + (Math.cos(range) * length);
+        const wY = y + (Math.sin(range) * length);
 
-      const x1 = x + 3;
-      const y1 = y;
-      const x2 = x;
-      const y2 = y - 3;
+        const x1 = x + 3;
+        const y1 = y;
+        const x2 = x;
+        const y2 = y - 3;
 
-      cxt.save();
-      const rad2 = cxt.createRadialGradient(x, y, 0, x, y, length);
-      rad2.addColorStop(0, 'rgba(255,255,255,0.1)');
-      rad2.addColorStop(1, 'rgba(255,255,255,0)');
-      cxt.fillStyle = rad2;
-      cxt.beginPath();
-      cxt.moveTo(x1, y1);
-      cxt.lineTo(x2, y2);
-      cxt.lineTo(wX, wY);
-      cxt.closePath();
-      cxt.fill();
-      cxt.restore();
-    }
+        cxt.save();
+        var rad2 = cxt.createRadialGradient(x, y, 0, x, y, length);
+        rad2.addColorStop(0, 'rgba(255,255,255,0.1)');
+        rad2.addColorStop(1, 'rgba(255,255,255,0)');
+        cxt.fillStyle = rad2;
+        cxt.beginPath();
+        cxt.moveTo(x1, y1);
+        cxt.lineTo(x2, y2);
+        cxt.lineTo(wX, wY);
+        cxt.closePath();
+        cxt.fill();
+        cxt.restore();
+      };
 
-    function getY(x: any, startY: any, startX: any) {
-      return k * x + startY - k * startX;
-    }
+      function getY(x: any, startY: any, startX: any) {
+        return k * x + startY - k * startX;
+      };
 
-    // 画点
-    function Cricle(x: any, y: any, r: any) {
-      cxt.save();
-      const rad = cxt.createRadialGradient(x, y, 0, x, y, r);
-      rad.addColorStop(0, 'rgba(255,255,255,0.8)');
-      rad.addColorStop(0.1, 'rgba(255,255,255,0.8)');
-      rad.addColorStop(0.2, 'rgba(255,255,255,0.08)');
-      rad.addColorStop(1, 'rgba(255,255,255,0)');
-      cxt.fillStyle = rad;
-      cxt.beginPath();
-      cxt.arc(x, y, r, 0, 2 * Math.PI, true);
-      cxt.closePath();
-      cxt.fill();
-      cxt.restore();
+      // 画点
+      function Cricle(x: any, y: any, r: any) {
+        cxt.save();
+        var rad = cxt.createRadialGradient(x, y, 0, x, y, r);
+        rad.addColorStop(0, 'rgba(255,255,255,0.8)');
+        rad.addColorStop(0.1, 'rgba(255,255,255,0.8)');
+        rad.addColorStop(0.2, 'rgba(255,255,255,0.08)');
+        rad.addColorStop(1, 'rgba(255,255,255,0)');
+        cxt.fillStyle = rad;
+        cxt.beginPath();
+        cxt.arc(x, y, r, 0, 2 * Math.PI, true);
+        cxt.closePath();
+        cxt.fill();
+        cxt.restore();
+      };
     }
   }
-}
 </script>
 <style lang="scss" scoped>
   @import "../../../styles/index.scss";
@@ -169,7 +169,7 @@ export default class HomeHeader extends Vue {
     .homeHeader-logo {
       width: px2rem(133);
       height: px2rem(100);
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/home/logo.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/home/logo.png');
       background-repeat: no-repeat;
       background-size: 100%;
       position: absolute;

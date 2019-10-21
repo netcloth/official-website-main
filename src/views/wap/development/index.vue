@@ -16,27 +16,27 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import Header from '@/components/header-wap.vue'; // 头部导航
-import devHome from './Header.vue'; // 底部通用导航
-import Footer from '@/components/footer-wap.vue'; // 底部通用导航
-import BackTop from '@/components/back-top-wap.vue'; // 返回顶部
+  import { Component, Vue } from 'vue-property-decorator';
+  import Header from '@/components/header-wap.vue'; // 头部导航
+  import devHome from './Header.vue'; // 底部通用导航
+  import Footer from '@/components/footer-wap.vue'; // 底部通用导航
+  import BackTop from '@/components/back-top-wap.vue'; // 返回顶部
 
-@Component({
-  components: {
-    Header,
-    devHome,
-    Footer,
-    BackTop,
-  },
-})
-export default class development extends Vue {
-  private logoUrl = {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/header/logo-red.png',
-    menuSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/header/menu-red.png',
-    menuCloseSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.2/dist/images-wap/header/menu-close-red.png',
-  };
-}
+  @Component({
+    components: {
+      Header,
+      devHome,
+      Footer,
+      BackTop,
+    }
+  })
+  export default class development extends Vue {
+    private logoUrl = {
+      imgSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/header/logo-red.png',
+      menuSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/header/menu-red.png',
+      menuCloseSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.3/dist/images-wap/header/menu-close-red.png',
+    }
+  }
 </script>
 <style lang="scss" scoped>
   @import "../../../styles/index.scss";
