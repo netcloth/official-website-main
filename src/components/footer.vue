@@ -109,7 +109,7 @@
       width: 166px;
       height: 44px;
       margin-bottom: 36px;
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/footer/footer-logo.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/footer/footer-logo.png');
       background-size: 100%;
     }
 
@@ -134,39 +134,39 @@
       }
 
       .footer-medium {
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/footer/medium.png');
+        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/footer/medium.png');
       }
 
       .footer-medium:hover {
         cursor: pointer;
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/footer/medium-hover.png');
+        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/footer/medium-hover.png');
       }
 
       .footer-twier {
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/footer/twier.png');
+        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/footer/twier.png');
       }
 
       .footer-twier:hover {
         cursor: pointer;
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/footer/twier-hover.png');
+        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/footer/twier-hover.png');
       }
 
       .footer-github {
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/footer/github.png');
+        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/footer/github.png');
       }
 
       .footer-github:hover {
         cursor: pointer;
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/footer/github-hover.png');
+        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/footer/github-hover.png');
       }
 
       .footer-wordpress {
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/footer/wordpress.png');
+        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/footer/wordpress.png');
       }
 
       .footer-wordpress:hover {
         cursor: pointer;
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/footer/wordpress-hover.png');
+        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/footer/wordpress-hover.png');
         background-size: 100%;
       }
 

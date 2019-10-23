@@ -9,13 +9,13 @@
   <div class="Carousel">
     <div class="Carousel-right">
       <transition name="fade">
-        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/carousel/1.png" alt="" srcset="" v-show='index==1'>
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/carousel/1.png" alt="" srcset="" v-show='index==1'>
       </transition>
       <transition name="fade">
-        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/carousel/2.png" alt="" srcset="" v-show='index==2'>
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/carousel/2.png" alt="" srcset="" v-show='index==2'>
       </transition>
       <transition name="fade">
-        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/carousel/3.png" alt="" srcset="" v-show='index==3'>
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/carousel/3.png" alt="" srcset="" v-show='index==3'>
       </transition>
       <div id="progress">
         <span :style="[Width]"></span>

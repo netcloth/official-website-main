@@ -23,7 +23,7 @@
         <li>
           <router-link to="Development" :style="{ color:Pcolor}">{{$t('header.dev')}}</router-link>
         </li>
-        <li><a title="" :style="{ color:Pcolor}">{{$t('header.block')}}</a></li>
+        <li @click='GoBlock' class="hover"><a title="" :style="{ color:Pcolor}">{{$t('header.block')}}</a></li>
         <li @click='GoBlog' class="hover"><a title="" :style="{ color:Pcolor}">{{$t('header.blog')}}</a></li>
       </ul>
     </div>
@@ -35,7 +35,7 @@
 
   @Component
   export default class Header extends Vue {
-    @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.6/dist/images/header/nav-logo.png' }) readonly imgSrc!: string;
+    @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images/header/nav-logo.png' }) readonly imgSrc!: string;
     @Prop({ default: '#ffffff' }) readonly Pcolor!: string;
     // methods
     private ChangLang(value: string): void {
@@ -49,6 +49,9 @@
       } else {
         window.open('https://medium.com/@NetCloth');
       }
+    }
+    private GoBlock() {
+      window.open('https://explorer.netcloth.org');
     }
   }
 </script>
