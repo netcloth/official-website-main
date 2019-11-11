@@ -10,23 +10,60 @@
     <div class="MailBox-title">{{$t('mail.Email')}}</div>
     <div class="MailBox-message">{{$t('mail.news')}}</div>
     <div class="MailBox-in">
-      <div class="MailBox-in-input">{{$t('mail.input')}}</div>
-      <div class="MailBox-in-btn">{{$t('mail.btn')}}</div>
+      <input type="text" class="MailBox-in-input" :placeholder="$t('mail.input')" ref="email_input"/>
+      <div class="MailBox-in-btn" v-on:click="commit_email" >{{$t('mail.btn')}}</div>
     </div>
   </div>
 </template>
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
+  import axios from 'axios';
   @Component
-  export default class MailBox extends Vue {}
+  export default class MailBox extends Vue {
+    private commit_email(){
+      let email =  document.getElementsByClassName('MailBox-in-input')[0].value;
+      var reg = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
+      if(!reg.test(email)){
+        console.log(this.$i18n);
+        let xxx = this.$i18n.messages[this.$i18n.locale].mail.msg_faild1;
+        alert(xxx); 
+        return;
+      }
+      let ok_msg = this.$i18n.messages[this.$i18n.locale].mail.msg_ok;
+      let faild_msg2 = this.$i18n.messages[this.$i18n.locale].mail.msg_faild2;
+      let faild_msg3 = this.$i18n.messages[this.$i18n.locale].mail.msg_faild3;
+      let url = '/config/email.php?language='+this.$i18n.locale+'&email='+email
+      axios.get(
+        url,
+        {
+          
+          method:'get',
+          withCredentials:true,
+        })
+      .then( (response) => {
+        console.log(response);
+        let res_obj = response.data;
+        if(res_obj.result){
+          alert(ok_msg);
+        }else{
+          alert(faild_msg2);
+        }
+      })
+      .catch( (error) => {
+        console.log(error)
+        alert(error)
+      });
+    }
+  }
 </script>
+
 <style lang="scss" scoped>
   @import "../../../styles/index.scss";
 
   .MailBox {
     box-sizing: border-box;
     background: rgba(249, 250, 253, 1);
-    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images-wap/home/mailbox.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.8/dist/images-wap/home/mailbox.png');
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;

@@ -23,11 +23,11 @@
       <div class="header-menu-open" v-show='isOpen'>
         <div class="header-menu">
           <div class="header-menu-btn header-menu-btn-close" @click='Open'>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images-wap/header/menu-close.png">
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.8/dist/images-wap/header/menu-close.png">
           </div>
         </div>
         <div class="header-logo">
-          <router-link to="/"><img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images-wap/header/nav-logo.png"></router-link>
+          <router-link to="/"><img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.8/dist/images-wap/header/nav-logo.png"></router-link>
         </div>
         <div class="header-btn">
           <span class="btn-en" @click='ChangLang("en")' v-if='language=="zh"'>EN</span>
@@ -59,9 +59,9 @@
     @Prop({
       default: function () {
         return {
-          imgSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images-wap/header/nav-logo.png',
-          menuSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images-wap/header/menu.png',
-          menuCloseSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.7/dist/images-wap/header/menu-close.png',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.8/dist/images-wap/header/nav-logo.png',
+          menuSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.8/dist/images-wap/header/menu.png',
+          menuCloseSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.0.8/dist/images-wap/header/menu-close.png',
         }
       }
     }) readonly logoUrl!: Object;

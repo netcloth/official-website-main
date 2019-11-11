@@ -87,6 +87,10 @@ export default {
         news: '欢迎进行邮件订阅，第一时间获取NetCloth最新进展。',
         input: '请输入邮箱地址',
         btn: '订阅',
+        msg_ok:"订阅成功",
+        msg_faild1:"订阅失败，邮件名称不合法",
+        msg_faild2:"订阅失败，重复订阅",
+        msg_faild3:"订阅失败，未知错误",
     },
     development: {
         title: '开发者专区',

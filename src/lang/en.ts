@@ -87,6 +87,10 @@ export default {
         news: 'Welcome to email subscriptions.Get the latest updates on NetCloth in first time.',
         input: 'Your email address',
         btn: 'Subscribe',
+        msg_ok:"Success",
+        msg_faild1:"Subscribe Failed，Please enter the correct e-mail address",
+        msg_faild2:"Subscribe Failed，You have already subscribed",
+        msg_faild3:"Subscribe Failed，Unknown Error",
     },
     development: {
         title: 'Developer Portal',
