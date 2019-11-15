@@ -67,7 +67,7 @@ export default {
     },
     routeMap: {
         title: '路线图',
-        y1: '2019.08',
+        y1: '2019.02',
         t1: 'NetCloth项目启动',
         y2: '2019.09',
         t2: 'NetCloth区块链框架搭建',

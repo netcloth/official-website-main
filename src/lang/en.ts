@@ -67,7 +67,7 @@ export default {
     },
     routeMap: {
         title: 'Road Map',
-        y1: 'Aug.2019',
+        y1: 'Feb.2019',
         t1: 'NetCloth Project Launch',
         y2: 'Sept. 2019',
         t2: 'NetCloth Framework Building of Blockchain',
