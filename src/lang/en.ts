@@ -13,7 +13,7 @@ export default {
         blog: 'Blog',
     },
     home: {
-        describe: 'A Blockchain Application Network Based On Privacy Protection and Data Security',
+        describe: 'Be dedicated to you own your data and data exchange safely',
         whitepaper: 'Whitepaper',
     },
     carousel: {

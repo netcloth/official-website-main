@@ -13,7 +13,7 @@ export default {
         blog: '博客',
     },
     home: {
-        describe: '基于隐私保护和数据安全的区块链应用网络',
+        describe: '致力于个人掌握数据与数据安全交换',
         whitepaper: '白皮书',
     },
     carousel: {
@@ -31,7 +31,7 @@ export default {
         title: 'NetCloth网络拥有的特点与优势',
         titleO: '数据驱动',
         messageO: 'NetCloth围绕数据搭建网络架构，将互联网从场景驱动数据升级为数据驱动场景。',
-        titleT: '隐私保护',
+        titleT: '个人掌握数据',
         messageT: 'NetCloth网络加密账户与身份、加密传输、加密存储，且可定制可信计算解决方案。',
         titleS: '第三方侧链监管',
         messageS: 'NetCloth提供第三方侧链设施，其作为联盟链，可验证数据真实性，并进行监管。',
@@ -118,7 +118,7 @@ export default {
         titleF: '可信存储',
         messageF: '用户的公钥用于加密数据主体，除了可数据加密存储外，还可以设置数据共享范围：本地存储、集群存储、分布式存储。',
         titleV: '可信计算',
-        messageV: 'NetCloth 将根据具体的应用场景，定制不同的可信计算技术解决方案，对数据进行计算，同时保护数据产生者的隐私。',
+        messageV: 'NetCloth 将根据具体的应用场景，定制不同的可信计算技术解决方案，对数据进行计算，同时保护数据产生者的数据安全。',
         titleE: '第三方侧链',
         messageE: 'NetCloth 设有第三方侧链接入口，以便兼容现有互联网场景、用户举证以及机构监管。第三方侧链是联盟链，将提供数据存储和存证。',
     },
@@ -135,7 +135,7 @@ export default {
     },
     EcosystemApp: {
         title: '应用生态',
-        message: 'NetCloth　APP是一款保护隐私的点对点即时通信APP，具有加密身份、加密通信、数据安全等特点。',
+        message: 'NetCloth APP是一款保护数据安全的点对点即时通信APP，具有加密身份、加密通信、加密存储等特点。',
         js: '建设中…',
         btn: '了解Dapp开发',
     },
