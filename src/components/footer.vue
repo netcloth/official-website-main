@@ -1,230 +1,231 @@
-<!--
- * @Description: 底部通用导航
- * @Date: 2019-09-23 15:05:10
- * @Author: 黄龙
- * @LastEditors: 黄龙
- * @LastEditTime: 2019-10-21 17:18:35
- -->
+import Vue from 'vue'
 <template>
-  <div class="footer">
-    <div class="footer-content">
-      <div class="footer-content-top">
-        <div class="footer-content-top-left">
-          <div class="footer-logo"></div>
-          <div class="footer-list">
-            <div class="footer-medium" @click='GoRouter("medium")'></div>
-            <div class="footer-twier" @click='GoRouter("twier")'></div>
-            <div class="footer-github" @click='GoRouter("github")'></div>
-            <div class="footer-wordpress" @click='GoRouter("wordpress")'></div>
-          </div>
-        </div>
-        <div class="footer-content-top-right">
-          <div class="footer_project">
-            <h4 class="title">{{$t('footer.project')}}</h4>
-            <ul class="link_list">
-              <li @click='GoRouter("app")' class="hover"><a>NetCloth App</a></li>
-              <li><a>{{$t('footer.Whitepaper')}}</a></li>
-              <li><a>Onepaper</a></li>
-            </ul>
-          </div>
-          <div class="footer_dev">
-            <h4 class="title">{{$t('footer.Resources')}}</h4>
-            <ul class="link_list">
-              <li class="hover">
-                <router-link to="Development">{{$t('footer.Portal')}}</router-link>
-              </li>
-              <li><a>{{$t('footer.Documents')}}</a></li>
-              <li class="hover" @click='GoRouter("github")'><a>GitHub</a></li>
-            </ul>
-          </div>
-          <div class="footer_community">
-            <h4 class="title">{{$t('footer.Community')}}</h4>
-            <ul class="link_list">
-              <li><a>{{$t('footer.Evemts')}}</a></li>
-              <li class="hover" @click='GoBlog'><a>{{$t('footer.Blog')}}</a></li>
-              <li><a>{{$t('footer.Media')}}</a></li>
-            </ul>
-          </div>
-          <div class="footer_about">
-            <h4 class="title">{{$t('footer.About')}}</h4>
-            <ul class="link_list">
-              <li><a>{{$t('footer.Kits')}}</a></li>
-              <li><a>{{$t('footer.FAQ')}}</a></li>
-              <li><a>{{$t('footer.Donation')}}</a></li>
-            </ul>
-          </div>
+  <div class="Footer clearfix">
+    <div class="content clearfix">
+      <div class="foot_left left">
+        <div class="logo"></div>
+        <div class="left_2 clearfix">
+          <a class="sublogo_1" href='https://medium.com/@NetCloth'></a>
+          <a class="sublogo_2" href='https://twitter.com/NetCloth'></a>
+          <a class="sublogo_3" href='https://github.com/netcloth'></a>
+          <a class="sublogo_4" href="mailto:contact@netcloth.org"></a>
         </div>
       </div>
-      <div class="footer-content-bootom">
-        <span>&#169</span>2019 NetCloth
+      <div class="left clearfix">
+        <div class="col1">
+          <div class="row1">{{$t("footer_new.item11")}}</div>
+          <a class="row2"  href="https://chat-app.netcloth.org">{{$t("footer_new.item12")}}</a>
+          <a class="row3">{{$t("footer_new.item13")}}</a>
+          <a class="row4">{{$t("footer_new.item14")}}</a>
+        </div>
+        <div class="col2">
+          <div class="row1">{{$t("footer_new.item21")}}</div>
+          <router-link class="row2" to="Development" >{{$t("footer_new.item22")}}</router-link>
+          <a class="row3" href="https://docs.netcloth.org">{{$t("footer_new.item23")}}</a>
+          <a class="row4" href='https://github.com/netcloth'>{{$t("footer_new.item24")}}</a>
+        </div>
+        <div class="col3">
+          <div class="row1">{{$t("footer_new.item31")}}</div>
+          <div class="row2">{{$t("footer_new.item32")}}</div>
+          <a class="row3" href="https://blog.netcloth.org">{{$t("footer_new.item33")}}</a>
+          <div class="row4">{{$t("footer_new.item34")}}</div>
+        </div>
+        <div class="col4">
+          <div class="row1">{{$t("footer_new.item41")}}</div>
+          <div class="row2">{{$t("footer_new.item42")}}</div>
+          <div class="row3">{{$t("footer_new.item43")}}</div>
+          <div class="row4">{{$t("footer_new.item44")}}</div>
+        </div>
+        
+      </div>
+      <div class="col5">
+        <div class="row1" style="text-align:center">{{$t("footer_new.item51")}}</div>
+        <div class="clearfix">
+          <div class="codebar right" v-bind:class="{codebar_en:(lang!='zh')}"></div>
+        </div>
       </div>
     </div>
+    <div class="line"></div>
+    <div class="bottom">©2019 NetCloth</div>
   </div>
+  
 </template>
-<script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
-  @Component
-  export default class Footer extends Vue {
-    private GoRouter(val) {
-      if (val == 'medium') {
-        window.open('https://medium.com/@NetCloth');
-      }
-      if (val == 'twier') {
-        window.open('https://twitter.com/NetCloth');
-      }
-      if (val == 'github') {
-        window.open('https://github.com/NetCloth');
-      }
-      if (val == 'wordpress') {
-        window.open('https://blog.netcloth.org');
-      }
-      if (val == 'app') {
-        window.open('http://chat-app.netcloth.org');
-      }
-    }
 
-    private GoBlog() {
-      if (this.$i18n.locale == 'zh') {
-        window.open('https://blog.netcloth.org');
-      } else {
-        window.open('https://medium.com/@NetCloth');
-      }
+<script>
+var _this = null;
+
+export default {
+  name: 'footer',
+  data () {
+    return {
+      timmer:null,
+      lang:'zh',
+    }
+  },
+  created:function(){
+    _this = this;
+    this.timmer= setInterval(function(){
+      _this.lang = localStorage.getItem('language');
+    },300);
+  },
+  destroyed:function(){
+    clearInterval(this.timmer);
+  },
+  methods:{
+    go: function(url){
+      window.location.href=url;
     }
   }
+}
 </script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 265px;
-    background: rgba(14, 19, 32, 1);
-
-    .footer-content {
-      width: 1100px;
-      margin: 0 auto;
+@import "../../src/styles/index.scss";
+.clearfix {
+    &::after {
+        content:''; 
+        display:block; 
+        clear:both; 
     }
+    zoom:1;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right
+}
+.Footer {
+  width:100%;
+  background-color:#0E1320;
+  
+}
+.foot_left{
+  float:left;
+}
+.content{
+  width:1100px;
+  margin: 0 auto;
+  border-top:38px solid rgba(0,0,0,0);
+}
+.logo{
+  width:166px;
+  height:44px;
+  background:url("/images/footer/logo.png");
+  background-size:100% 100%;
+}
+.left_2{
+  margin-top:37px;
+}
+.sublogo{
+  width:40px;
+  height:40px;
+  float:left;
+  cursor: pointer;
+  text-decoration:none;
+}
+.sublogo_1{
+  @extend .sublogo;
+  background:url("/images/footer/footer_sublogo_image1.png");
+  background-size:100% 100%;
+}
+.sublogo_2{
+  @extend .sublogo;
+  background:url("/images/footer/footer_sublogo_image2.png");
+  background-size:100% 100%;
+  margin-left:24px;
+}
+.sublogo_3{
+  @extend .sublogo;
+  background:url("/images/footer/footer_sublogo_image3.png");
+  background-size:100% 100%;
+  margin-left:24px;
+}
+.sublogo_4{
+  @extend .sublogo;
+  background:url("/images/footer/footer_sublogo_image4.png");
+  background-size:100% 100%;
+  margin-left:24px;
+}
+.foot_right{
+  float:right;
+}
+.col{
+  color:#A8ACB3;
+  float:left;
+  //width:140px;
+}
+.col1{
+  @extend .col;
+  margin-left:100px;
+}
+.col2{
+  @extend .col;
+  margin-left:48px;
+}
+.col3{
+  @extend .col;
+  margin-left:48px;
+}
+.col4{
+  @extend .col;
+  margin-left:48px;
+}
+.col5{
+  @extend .col;
+  float: right;
+}
+.row{
+  font-size:12px;
+  color:#A8ACB3;
+  display:block;
+}
+.row1{
+  @extend .row;
+  font-size:16px;
+  margin-bottom:24px;
+}
+.row2{
+  @extend .row;
+  margin-top:12px;
+  line-height: 17px;
+}
+.row3{
+  @extend .row;
+  margin-top:12px;
+  line-height: 17px;
+}
+.row4{
+  @extend .row;
+  margin-top:12px;
+  line-height: 17px;
+}
 
-    .footer-logo {
-      width: 166px;
-      height: 44px;
-      margin-bottom: 36px;
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/footer/footer-logo.png');
-      background-size: 100%;
-    }
-
-    .footer-content-top {
-      height: 208px;
-      padding: 38px 0 50px 0;
-    }
-
-    .footer-content-top-left {
-      width: 250px;
-      display: inline-block;
-
-      .footer-list div {
-        width: 40px;
-        height: 40px;
-        display: inline-block;
-        background-size: 100%;
-      }
-
-      .footer-list div:not(:last-child) {
-        margin-right: 30px;
-      }
-
-      .footer-medium {
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/footer/medium.png');
-      }
-
-      .footer-medium:hover {
-        cursor: pointer;
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/footer/medium-hover.png');
-      }
-
-      .footer-twier {
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/footer/twier.png');
-      }
-
-      .footer-twier:hover {
-        cursor: pointer;
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/footer/twier-hover.png');
-      }
-
-      .footer-github {
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/footer/github.png');
-      }
-
-      .footer-github:hover {
-        cursor: pointer;
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/footer/github-hover.png');
-      }
-
-      .footer-wordpress {
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/footer/wordpress.png');
-      }
-
-      .footer-wordpress:hover {
-        cursor: pointer;
-        background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/footer/wordpress-hover.png');
-        background-size: 100%;
-      }
-
-    }
-
-    .footer-content-top-right {
-      float: right;
-
-
-      div {
-        display: inline-block;
-        text-align: left;
-      }
-
-      div:not(:last-child) {
-        margin-right: 110px;
-      }
-
-      h4 {
-        margin: 0;
-        padding: 0;
-        margin-top: 9px;
-        margin-bottom: 20px;
-        font-size: 16px;
-        font-weight: 500;
-        color: #c5c9d1;
-        line-height: 22px;
-      }
-
-      ul {
-        line-height: 1.5;
-      }
-
-      ul li {
-        display: block;
-        margin-top: 8px;
-
-        a {
-          color: #8c919a;
-          font-size: 14px;
-        }
-      }
-
-      .link_list .hover:hover a {
-        cursor: pointer;
-        color: rgba(168, 172, 179, 1);
-      }
-    }
-
-
-    .footer-content-bootom {
-      height: 56px;
-      font-size: 12px;
-      font-weight: 400;
-      text-align: center;
-      color: rgba(108, 112, 120, 1);
-      padding: 19px 0;
-      border-top: 1px solid rgba(255, 255, 255, .1);
-    }
-  }
+.line{
+  width:1100px;
+  height:1px;
+  background:#6C7078;
+  margin:0 auto;
+  margin-top:50px;
+}
+.bottom{
+  color:#6C7078;
+  font-size:12px;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin:0 auto;
+  margin-top:19px;
+}
+.codebar{
+  width:128px;
+  height:128px;
+  background:url("/images/footer/community_cn.png");
+  background-size:100% 100%;
+}
+.codebar_en{
+  background:url("/images/footer/community_en.png");
+  background-size:100% 100%;
+}
 </style>

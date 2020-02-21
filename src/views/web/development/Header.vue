@@ -15,7 +15,7 @@
         <div class="devHeader-centent-header"></div>
         <div class="devHeader-centent-title">{{$t('development.leftTitle')}}</div>
         <div class="devHeader-centent-message">{{$t('development.leftMessage')}}</div>
-        <div class="devHeader-centent-btn">{{$t('development.leftBtn')}}</div>
+        <a href="https://docs.netcloth.org" target="_blank" class="devHeader-centent-btn">{{$t('development.leftBtn')}}</a>
       </div>
       <div class="devHeader-centent-right">
         <div class="devHeader-centent-right-o">
@@ -37,6 +37,21 @@
             <div class="devHeader-centent-input-t">{{$t('development.rightMessageS')}}</div>
             <div class="devHeader-centent-input-j"></div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="dev">
+      <div class="dev_title">{{$t('development.title2')}}</div>
+      <div class="dev_contain clearfix">
+        <div class="dev_col1 left">
+          <div class="dev_row1_1"></div>
+          <div class="dev_row1_2">{{$t('development.row_1_1')}}</div>
+          <div class="dev_row1_3">{{$t('development.row_2_1')}}</div>
+        </div>
+        <div class="dev_col2 left">
+          <div class="dev_row2_1"></div>
+          <div class="dev_row2_2">{{$t('development.row_1_2')}}</div>
+          <div class="dev_row2_3">{{$t('development.row_2_2')}}</div>
         </div>
       </div>
     </div>
@@ -65,7 +80,7 @@
     .devHeader-bg {
       width: 100%;
       height: 300px;
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/development/dev-header.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/development/dev-header.png');
       background-size: 100%;
     }
 
@@ -87,7 +102,7 @@
       .devHeader-centent-header {
         width: 58px;
         height: 20px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/development/line-red.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/development/line-red.png');
         background-size: 100%;
         margin-left: -10px;
       }
@@ -155,15 +170,16 @@
       .devHeader-centent-btn {
         width: 200px;
         height: 50px;
-        background: rgba(240, 241, 245, 1);
+        background: rgb(221, 22, 62);
         border-radius: 4px;
         font-size: 18px;
         font-weight: 400;
-        color: rgba(131, 134, 144, 1);
+        color: #ffffff;
         line-height: 50px;
         text-align: center;
         cursor: pointer;
         margin-top: 222px;
+        display:block;
       }
 
       .devHeader-centent-input {
@@ -197,7 +213,7 @@
           float: right;
           width: 16px;
           height: 13px;
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/development/golook.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/development/golook.png');
           background-size: 100%;
           margin-top: 7px;
         }
@@ -215,11 +231,79 @@
         }
 
         .devHeader-centent-input-j {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/development/golook-red.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/development/golook-red.png');
           background-size: 100%;
         }
       }
 
     }
   }
+.left{
+  float:left;
+}
+.clearfix {
+    &::after {
+        content:''; 
+        display:block; 
+        clear:both; 
+    }
+    zoom:1;
+}
+.dev{
+  margin: 84px 0;
+}
+.dev_title{
+  width:1100px;
+  margin: 0 auto;
+  font-size:40px;
+  font-weight:500;
+  color:rgba(23,33,60,1);
+  line-height:54px;
+}
+
+.dev_contain {
+  width:1100px;
+  margin:0 auto;
+  margin-top:65px;
+}
+.dev_col1{
+  width:fit-content;
+  
+}
+.dev_row1_1{
+  width:101px;
+  height:101px;
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/starfish/resource_image3.png");
+  background-size:100% 100%;
+  margin:0 auto;
+}
+.dev_row1_2{
+  font-size:18px;
+  font-weight:600;
+  color:rgba(23,33,60,1);
+  line-height:30px;
+  text-align: center;
+  margin-top:13px;
+}
+.dev_row1_3{
+  font-size:15px;
+  font-weight:400;
+  color:rgba(155,157,164,1);
+  line-height:30px;
+  text-align: center;
+}
+.dev_col2{
+  margin-left:150px;
+}
+.dev_row2_1{
+  @extend .dev_row1_1;
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/starfish/resource_image4.png");
+  background-size:100% 100%;
+}
+.dev_row2_2{
+  @extend .dev_row1_2;
+}
+.dev_row2_3{
+  @extend .dev_row1_3;
+}
 </style>

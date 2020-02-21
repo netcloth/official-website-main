@@ -10,7 +10,8 @@ import Router from 'vue-router';
 import Home from './views/web/home/index.vue';
 import Development from './views/web/development/index.vue';
 import Dcosystem from './views/web/ecosystem/index.vue';
-
+import starfish from './views/web/starfish/starfish.vue';
+import starfish_rule from './views/web/starfish/starfish_rule.vue';
 import wapHome from './views/wap/home/index.vue';
 import wapDevelopment from './views/wap/development/index.vue';
 import wapDcosystem from './views/wap/ecosystem/index.vue';
@@ -31,6 +32,14 @@ const web = [{
   path: '/ecosystem',
   name: 'ecosystem',
   component: Dcosystem,
+},{
+  path: '/starfish',
+  name: 'starfish',
+  component: starfish,
+},{
+  path: '/starfish_rule',
+  name: 'starfish_rule',
+  component: starfish_rule,
 }];
 
 const wap = [{

@@ -25,6 +25,9 @@
         </li>
         <li @click='GoBlock' class="hover"><a title="" :style="{ color:Pcolor}">{{$t('header.block')}}</a></li>
         <li @click='GoBlog' class="hover"><a title="" :style="{ color:Pcolor}">{{$t('header.blog')}}</a></li>
+        <li>
+          <router-link to="starfish" :style="{ color:Pcolor}">{{$t('header.starfish')}}</router-link>
+        </li>
       </ul>
     </div>
   </div>
@@ -35,7 +38,7 @@
 
   @Component
   export default class Header extends Vue {
-    @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/header/nav-logo.png' }) readonly imgSrc!: string;
+    @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/header/nav-logo.png' }) readonly imgSrc!: string;
     @Prop({ default: '#ffffff' }) readonly Pcolor!: string;
     // methods
     private ChangLang(value: string): void {

@@ -8,7 +8,7 @@
 <template>
   <div class="homeHeader">
     <canvas id='canvas'></canvas>
-    <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/home/Moon.png" class="homeHeader-img">
+    <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/home/Moon.png" class="homeHeader-img">
     <div class="homeHeader-centent">
       <div class="homeHeader-logo"></div>
       <div class="homeHeader-content-title">NetCloth</div>
@@ -16,6 +16,8 @@
       <div class="homeHeader-centent-btn">
         <div class="homeHeader-centent-btn-book">{{$t('home.whitepaper')}}</div>
         <div class="homeHeader-centent-btn-Onepaper">Onepaper</div>
+        <div class="homeHeader-centent-btn-Onepaper">{{$t('home.eco')}}</div>
+        <div class="homeHeader-centent-btn-APP">NetCloth APP</div>
       </div>
       <div class="homeHeader-centent-more">
         <p class="homeHeader-centent-more-btn"><span class="homeHeader-centent-more-btn-dot"></span></p>
@@ -167,7 +169,7 @@
     .homeHeader-logo {
       width: 7vw;
       height: 134px;
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.0/dist/images/home/logo.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/home/logo.png');
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: 50% 100%;
@@ -215,13 +217,19 @@
         }
 
         .homeHeader-centent-btn-book {
-          margin-right: 22px;
+          
         }
 
         .homeHeader-centent-btn-Onepaper,
-        .homeHeader-centent-btn-book {
+        .homeHeader-centent-btn-book,
+        .homeHeader-centent-btn-APP {
+          margin-right: 22px;
           cursor: pointer;
           border: 1px solid rgba(255, 255, 255, 1);
+        }
+        .homeHeader-centent-btn-APP{
+          background:#DD163E;
+          border:none;
         }
       }
 
