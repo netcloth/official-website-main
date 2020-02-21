@@ -98,31 +98,31 @@
       .One {
         width: 75px;
         height: 70px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/advantage/one.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.2/dist/images/advantage/one.png');
       }
 
       .Two {
         width: 71px;
         height: 71px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/advantage/two.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.2/dist/images/advantage/two.png');
       }
 
       .Three {
         width: 62px;
         height: 70px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/advantage/three.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.2/dist/images/advantage/three.png');
       }
 
       .Four {
         width: 69px;
         height: 70px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/advantage/four.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.2/dist/images/advantage/four.png');
       }
 
       .Five {
         width: 66px;
         height: 75px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/advantage/five.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.2/dist/images/advantage/five.png');
       }
 
       .Advantage-centent-title {

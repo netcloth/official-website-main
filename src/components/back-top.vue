@@ -58,12 +58,12 @@
     height: 94px;
     cursor: pointer;
     z-index: 99;
-    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/home/top.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.2/dist/images/home/top.png');
     background-size: 100%;
     background-repeat: no-repeat;
   }
 
   .go-top:hover {
-    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.1/dist/images/home/top-hover.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.2/dist/images/home/top-hover.png');
   }
 </style>
