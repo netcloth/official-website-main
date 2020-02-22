@@ -32,9 +32,11 @@ export function getLanguage() {
     const locales = Object.keys(messages);
     for (const locale of locales) {
         if (language.indexOf(locale) > -1) {
+            localStorage.setItem('language', locale);
             return locale;
         }
     }
+    localStorage.setItem('language', 'zh');
     return 'zh';
 }
 

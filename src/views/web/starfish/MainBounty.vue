@@ -43,7 +43,7 @@ import Vue from 'vue'
           <div class = "item1_contain_left left ">
             <div class="item1_contain_left_row1 clearfix">
               <div class="item1_contain_left_row1_1 left">{{$t("Boundy.text_right_1_1")}}</div>
-              <div class="item1_contain_left_row1_2 left">100</div>
+              <div class="item1_contain_left_row1_2 left">10</div>
               <div class="item1_contain_left_row1_3 left">{{$t("Boundy.text_right_1_2")}}</div>
             </div>
             <div class="item1_contain_left_row2">{{$t("Boundy.text_right_2")}}</div>
@@ -131,7 +131,7 @@ export default {
 .icon{
   height:50px;
   width:49px;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images/starfish/boundy_icon.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.6/dist/images/starfish/boundy_icon.png");
   background-size: 100% 100%;
 }
 .item1_sub_describe{
