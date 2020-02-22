@@ -257,7 +257,7 @@ export default {
         rule_row1_left3:'1,500,000NCH',
     
         rule_row1_right1:'活动时间',
-        rule_row1_right2:'02.14 - 06.01',
+        rule_row1_right2:'02.14 - 06月',
         rule_row1_right3:'NetCloth主网上线',
     
         rule_row2_left_title:'验证人',

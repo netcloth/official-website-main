@@ -15,13 +15,13 @@
         <div class="devHeader-centent-header"></div>
         <div class="devHeader-centent-title">{{$t('development.leftTitle')}}</div>
         <div class="devHeader-centent-message">{{$t('development.leftMessage')}}</div>
-        <div class="devHeader-centent-btn">{{$t('development.leftBtn')}}</div>
+        <div class="devHeader-centent-btn" @click="GoRouter('docs')">{{$t('development.leftBtn')}}</div>
       </div>
       <div class="devHeader-centent-right-o">
         <div class="devHeader-centent-header"></div>
         <div class="devHeader-centent-title">{{$t('development.rightTitleO')}}</div>
         <div class="devHeader-centent-input">
-          <div class="devHeader-centent-input-t">{{$t('development.rightMessageO')}}</div>
+          <div class="devHeader-centent-input-t" @click="GoRouter('TestNet')">{{$t('development.rightMessageO')}}</div>
           <div class="devHeader-centent-input-j"></div>
         </div>
       </div>
@@ -55,6 +55,20 @@
       if (val == 'Chain') {
         window.open('https://github.com/NetCloth/netcloth-chain')
       }
+      if(val == 'TestNet'){
+        if(localStorage.getItem('language')=='zh'){
+          window.open('https://docs.netcloth.org/get-started/how-to-join-alphanet.html');
+        }else{
+          window.open('https://docs.netcloth.org/en/get-started/how-to-join-alphanet.html');
+        }
+      }
+      if(val=='docs'){
+        if(localStorage.getItem('language')=='zh'){
+          window.open('https://docs.netcloth.org/');
+        }else{
+          window.open('https://docs.netcloth.org/en/');
+        }
+      }
     }
   }
 </script>
@@ -68,7 +82,7 @@
       box-sizing: border-box;
       width: 100%;
       height: px2rem(450);
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images-wap/development/dev-header.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/development/dev-header.png');
       background-size: 100%;
       padding-top: px2rem(213);
     }
@@ -89,7 +103,7 @@
       &-header {
         width: px2rem(88);
         height: px2rem(23);
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images-wap/development/line-red.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/development/line-red.png');
         background-size: 100%;
       }
 
@@ -142,11 +156,11 @@
       &-btn {
         width: px2rem(300);
         height: px2rem(80);
-        background: rgba(240, 241, 245, 1);
+        background: #dd0e36;
         border-radius: px2rem(6);
         font-size: px2rem(30);
         font-weight: 400;
-        color: rgba(131, 134, 144, 1);
+        color: #ffffff;
         line-height: px2rem(80);
         text-align: center;
         cursor: pointer;
@@ -174,7 +188,7 @@
           float: right;
           width: px2rem(32);
           height: px2rem(26);
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images-wap/development/golook.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/development/golook.png');
           background-size: 100%;
         }
       }

@@ -86,7 +86,7 @@ export default {
   color:#17213C;
 }
 .step_content{
-  width: fit-content;
+  width: 1100px;;
   background:#ffffff;
   margin:0 auto;
   padding:21px 40px;
@@ -94,6 +94,7 @@ export default {
   box-shadow:0px 2px 15px 0px rgba(23,33,60,0.1);
 }
 .validator{
+  width:134px;
 }
 .validator_text{
   padding-top:19px;
@@ -112,13 +113,13 @@ export default {
 .grey_line{
   height:120px;
   width:1px;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/starfish/grey_line.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/starfish/grey_line.png");
   background-size:100% 100%;
   margin:9px 40px;
 
 }
 .step{
-  width:210px;
+  width:200px;
 }
 .step1{
   @extend .step;
@@ -149,7 +150,7 @@ export default {
 
 .step1_img{
   @extend .step_img;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/starfish/main_step1.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/starfish/main_step1.png");
   background-size:100% 100%;
 }
 .step1_txt{
@@ -157,7 +158,7 @@ export default {
 }
 .step2_img{
   @extend .step_img;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/starfish/main_step2.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/starfish/main_step2.png");
   background-size:100% 100%;
 }
 .step2_txt{
@@ -165,7 +166,7 @@ export default {
 }
 .step3_img{
   @extend .step_img;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/starfish/main_step3.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/starfish/main_step3.png");
   background-size:100% 100%;
 }
 .step3_txt{
@@ -173,7 +174,7 @@ export default {
 }
 .step4_img{
   @extend .step_img;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/starfish/main_step4.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/starfish/main_step4.png");
   background-size:100% 100%;
 }
 .step4_txt{
@@ -216,22 +217,22 @@ export default {
 
 .part_step1_img{
   @extend .step_img;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/starfish/part_step_img1.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/starfish/part_step_img1.png");
   background-size:100% 100%;
 }
 .part_step2_img{
   @extend .step_img;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/starfish/part_step_img2.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/starfish/part_step_img2.png");
   background-size:100% 100%;
 }
 .part_step3_img{
   @extend .step_img;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/starfish/part_step_img3.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/starfish/part_step_img3.png");
   background-size:100% 100%;
 }
 .part_step4_img{
   @extend .step_img;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/starfish/main_step4.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/starfish/main_step4.png");
   background-size:100% 100%;
 }
 

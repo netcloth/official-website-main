@@ -113,7 +113,7 @@
       width: 1099px;
       height: 646px;
       text-align: center;
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/routeMap/Map.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/routeMap/Map.png');
       margin: 0 auto;
       padding-top: 88px;
 

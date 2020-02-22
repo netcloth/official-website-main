@@ -63,7 +63,7 @@
   .MailBox {
     box-sizing: border-box;
     background: rgba(249, 250, 253, 1);
-    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images-wap/home/mailbox.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/home/mailbox.png');
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;

@@ -19,7 +19,7 @@ export default {
     home: {
         describe: 'Make You and Your Network Unique',
         whitepaper: 'Whitepaper',
-        eco:'Ecological Construction Plan',
+        eco:'Ecological Plan',
     },
     carousel: {
         titleO: 'Current Problems',
@@ -264,7 +264,7 @@ export default {
         rule_row2_left_title:'Validators',
         rule_row2_left1:'1. Winner：Top 100 active Validators and active for 30 consecutive days.',
         rule_row2_left2:'2. Bounty：5,000 NCH per Validator .',
-        rule_row2_left3:'3. Release Time：Mainnet Launch.Please backup your keystore files properly.',
+        rule_row2_left3:'3. Distribution Time：Mainnet Launch.Please backup your keystore files properly.',
         rule_row2_left4:'Tip: If the Validatior is offline, the number of consecutive active days will be recalculated.',
         rule_row2_left5:'Tip: Please backup your account properly, you will not receive reward If you lose it.',
         rule_row2_left6:'Validator',
@@ -272,7 +272,7 @@ export default {
         rule_row2_right_title:'Ecological Partners',
         rule_row2_right1:'1. Winner：10 super ecological partners and operate stably until Mainnet launch.',
         rule_row2_right2:'2. Bounty：50,000~100,000 NCH per ecology partner.',
-        rule_row2_right3:'3. Release Time：Mainnet Launch.',
+        rule_row2_right3:'3. Distribution Time：Mainnet Launch.',
         rule_row2_right4:'Tip:The flexibility of the bounty amount depends on the quality of starfish nodes.',
     
         rule_describe_title:'Supplementary note',

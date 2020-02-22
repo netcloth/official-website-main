@@ -8,7 +8,7 @@
 <template>
   <div class="homeHeader">
     <canvas id='canvas'></canvas>
-    <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images-wap/home/Moon.png" class="homeHeader-img">
+    <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/home/Moon.png" class="homeHeader-img">
     <div class="homeHeader-logo"></div>
     <div class="homeHeader-centent">
       <div class="homeHeader-content-title">NetCloth</div>
@@ -16,6 +16,10 @@
       <div class="homeHeader-centent-btn">
         <div class="homeHeader-centent-btn-book">{{$t('home.whitepaper')}}</div>
         <div class="homeHeader-centent-btn-Onepaper">Onepaper</div>
+      </div>
+      <div class="homeHeader-centent-btn">
+        <div class="homeHeader-centent-btn-book">{{$t('home.eco')}}</div>
+        <div class="homeHeader-centent-btn-Onepaper NetApp" @click="GoUrlNew('https://chat-app.netcloth.org')">NetClothApp</div>
       </div>
       <div class="homeHeader-centent-more">
         <p class="homeHeader-centent-more-btn"><span class="homeHeader-centent-more-btn-dot"></span></p>
@@ -34,6 +38,12 @@
   export default class HomeHeader extends Vue {
     private mounted() {
       this.EachList();
+    }
+    private GoUrlNew(url){
+      window.open(url);
+    }
+    private GoUrl(url){
+      window.location.href=url;
     }
     private EachList() {
       var can = document.getElementById('canvas');
@@ -151,7 +161,9 @@
 </script>
 <style lang="scss" scoped>
   @import "../../../styles/index.scss";
-
+  .NetApp{
+    background:#dd163e;
+  }
   .homeHeader {
     box-sizing: border-box;
     width: 100%;
@@ -169,7 +181,7 @@
     .homeHeader-logo {
       width: px2rem(133);
       height: px2rem(100);
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images-wap/home/logo.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/home/logo.png');
       background-repeat: no-repeat;
       background-size: 100%;
       position: absolute;

@@ -15,14 +15,14 @@
         <div class="devHeader-centent-header"></div>
         <div class="devHeader-centent-title">{{$t('development.leftTitle')}}</div>
         <div class="devHeader-centent-message">{{$t('development.leftMessage')}}</div>
-        <a href="https://docs.netcloth.org" target="_blank" class="devHeader-centent-btn">{{$t('development.leftBtn')}}</a>
+        <a :href="'https://docs.netcloth.org/'+(GetLanguage()=='en'?'en':'')" target="_blank" class="devHeader-centent-btn">{{$t('development.leftBtn')}}</a>
       </div>
       <div class="devHeader-centent-right">
         <div class="devHeader-centent-right-o">
           <div class="devHeader-centent-header"></div>
           <div class="devHeader-centent-title">{{$t('development.rightTitleO')}}</div>
           <div class="devHeader-centent-input">
-            <div class="devHeader-centent-input-t">{{$t('development.rightMessageO')}}</div>
+            <div class="devHeader-centent-input-t " @click='GoRouter("TestNet")'>{{$t('development.rightMessageO')}}</div>
             <div class="devHeader-centent-input-j"></div>
           </div>
         </div>
@@ -62,12 +62,22 @@
 
   @Component
   export default class DevHeader extends Vue {
+    private GetLanguage(){
+      return localStorage.getItem('language');
+    }
     private GoRouter(val) {
       if (val == 'github') {
         window.open('https://github.com/NetCloth')
       }
       if (val == 'Chain') {
         window.open('https://github.com/NetCloth/netcloth-chain')
+      }
+      if(val == 'TestNet'){
+        if(localStorage.getItem('language')=='zh'){
+          window.open('https://docs.netcloth.org/get-started/how-to-join-alphanet.html');
+        }else{
+          window.open('https://docs.netcloth.org/en/get-started/how-to-join-alphanet.html');
+        }
       }
     }
   }
@@ -80,7 +90,7 @@
     .devHeader-bg {
       width: 100%;
       height: 300px;
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/development/dev-header.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/development/dev-header.png');
       background-size: 100%;
     }
 
@@ -102,7 +112,7 @@
       .devHeader-centent-header {
         width: 58px;
         height: 20px;
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/development/line-red.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/development/line-red.png');
         background-size: 100%;
         margin-left: -10px;
       }
@@ -213,7 +223,7 @@
           float: right;
           width: 16px;
           height: 13px;
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/development/golook.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/development/golook.png');
           background-size: 100%;
           margin-top: 7px;
         }
@@ -231,7 +241,7 @@
         }
 
         .devHeader-centent-input-j {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/development/golook-red.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/development/golook-red.png');
           background-size: 100%;
         }
       }
@@ -273,7 +283,7 @@
 .dev_row1_1{
   width:101px;
   height:101px;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/starfish/resource_image3.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/starfish/resource_image3.png");
   background-size:100% 100%;
   margin:0 auto;
 }
@@ -297,7 +307,7 @@
 }
 .dev_row2_1{
   @extend .dev_row1_1;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.3/dist/images/starfish/resource_image4.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/starfish/resource_image4.png");
   background-size:100% 100%;
 }
 .dev_row2_2{

@@ -56,6 +56,14 @@ const wap = [{
   path: '/ecosystem',
   name: 'ecosystem',
   component: wapDcosystem,
+},{
+  path: '/starfish',
+  name: 'starfish',
+  component: starfish,
+},{
+  path: '/starfish_rule',
+  name: 'starfish_rule',
+  component: starfish_rule,
 }];
 
 // 判断移动端还是pc端
