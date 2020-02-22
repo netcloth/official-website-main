@@ -8,17 +8,17 @@
 <template>
   <div class="homeHeader">
     <canvas id='canvas'></canvas>
-    <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/home/Moon.png" class="homeHeader-img">
+    <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images-wap/home/Moon.png" class="homeHeader-img">
     <div class="homeHeader-logo"></div>
     <div class="homeHeader-centent">
       <div class="homeHeader-content-title">NetCloth</div>
       <div class="homeHeader-centent-describe">{{$t('home.describe')}}</div>
       <div class="homeHeader-centent-btn">
-        <div class="homeHeader-centent-btn-book">{{$t('home.whitepaper')}}</div>
+        <div class="homeHeader-centent-btn-book" @click="GoUrl('paper')">{{$t('home.whitepaper')}}</div>
         <div class="homeHeader-centent-btn-Onepaper">Onepaper</div>
       </div>
       <div class="homeHeader-centent-btn">
-        <div class="homeHeader-centent-btn-book">{{$t('home.eco')}}</div>
+        <div class="homeHeader-centent-btn-book" @click="GoUrl('eco')">{{$t('home.eco')}}</div>
         <div class="homeHeader-centent-btn-Onepaper NetApp" @click="GoUrlNew('https://chat-app.netcloth.org')">NetClothApp</div>
       </div>
       <div class="homeHeader-centent-more">
@@ -43,7 +43,19 @@
       window.open(url);
     }
     private GoUrl(url){
-      window.location.href=url;
+      if(url=="paper"){
+        if(localStorage.getItem("language") == "zh"){
+          window.open('https://github.com/netcloth/whitepaper/blob/master/whitepaper_cn.md');
+        }else{
+          window.open('https://github.com/netcloth/whitepaper/blob/master/whitepaper.md');
+        }
+      }if(url == "eco"){
+        if(localStorage.getItem("language") == "zh"){
+          window.open("https://github.com/netcloth/whitepaper/blob/master/EcologicalConstruction_cn.md");
+        }else{
+          window.open("https://github.com/netcloth/whitepaper/blob/master/EcologicalConstruction.md");
+        }
+      }
     }
     private EachList() {
       var can = document.getElementById('canvas');
@@ -181,7 +193,7 @@
     .homeHeader-logo {
       width: px2rem(133);
       height: px2rem(100);
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/home/logo.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images-wap/home/logo.png');
       background-repeat: no-repeat;
       background-size: 100%;
       position: absolute;

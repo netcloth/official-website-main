@@ -10,23 +10,23 @@
     <div class="Carousel-swiper-title">{{$t('carousel.titleO')}}</div>
     <Swiper duration='5000' interval="7000" ref='swiper' class="Carousel-swiper">
       <Slide>
-        <img class="Carousel-swiper-img" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/home/1.png" alt="" srcset="">
+        <img class="Carousel-swiper-img" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images-wap/home/1.png" alt="" srcset="">
         <div class="Carousel-swiper-subtitle">{{$t('carousel.subTitleO')}}</div>
         <div class="Carousel-swiper-new">{{$t('carousel.messageO')}}</div>
       </Slide>
       <Slide>
-        <img class="Carousel-swiper-img" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/home/2.png" alt="" srcset="">
+        <img class="Carousel-swiper-img" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images-wap/home/2.png" alt="" srcset="">
         <div class="Carousel-swiper-subtitle">{{$t('carousel.subTitleT')}}</div>
         <div class="Carousel-swiper-new">{{$t('carousel.messageT')}}</div>
       </Slide>
       <Slide>
-        <img class="Carousel-swiper-img" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/home/3.png" alt="" srcset="">
+        <img class="Carousel-swiper-img" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images-wap/home/3.png" alt="" srcset="">
         <div class="Carousel-swiper-subtitle">{{$t('carousel.subTitleS')}}</div>
         <div class="Carousel-swiper-new">{{$t('carousel.messageS')}}</div>
       </Slide>
     </Swiper>
-    <img class="Carousel-swiper-left" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/home/left.png" @click='ClickLeft'>
-    <img class="Carousel-swiper-right" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/home/right.png" @click='ClickRight'>
+    <img class="Carousel-swiper-left" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images-wap/home/left.png" @click='ClickLeft'>
+    <img class="Carousel-swiper-right" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images-wap/home/right.png" @click='ClickRight'>
   </div>
 </template>
 <script lang="ts">

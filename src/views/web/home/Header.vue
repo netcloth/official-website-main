@@ -14,9 +14,9 @@
       <div class="homeHeader-content-title">NetCloth</div>
       <div class="homeHeader-centent-describe">{{$t('home.describe')}}</div>
       <div class="homeHeader-centent-btn">
-        <div class="homeHeader-centent-btn-book">{{$t('home.whitepaper')}}</div>
+        <div class="homeHeader-centent-btn-book" @click="GoUrl('paper')">{{$t('home.whitepaper')}}</div>
         <div class="homeHeader-centent-btn-Onepaper">Onepaper</div>
-        <div class="homeHeader-centent-btn-Onepaper">{{$t('home.eco')}}</div>
+        <div class="homeHeader-centent-btn-Onepaper" @click="GoUrl('eco')">{{$t('home.eco')}}</div>
         <div class="homeHeader-centent-btn-APP" @click="GoApp()">NetCloth APP</div>
       </div>
       <div class="homeHeader-centent-more">
@@ -40,6 +40,21 @@
     private  GoApp(){
         window.location.href='https://chat-app.netcloth.org';
       
+    }
+    private GoUrl(url){
+      if(url=="paper"){
+        if(localStorage.getItem("language") == "zh"){
+          window.open('https://github.com/netcloth/whitepaper/blob/master/whitepaper_cn.md');
+        }else{
+          window.open('https://github.com/netcloth/whitepaper/blob/master/whitepaper.md');
+        }
+      }if(url == "eco"){
+        if(localStorage.getItem("language") == "zh"){
+          window.open("https://github.com/netcloth/whitepaper/blob/master/EcologicalConstruction_cn.md");
+        }else{
+          window.open("https://github.com/netcloth/whitepaper/blob/master/EcologicalConstruction.md");
+        }
+      }
     }
     private EachList() {
       var can = document.getElementById('canvas');

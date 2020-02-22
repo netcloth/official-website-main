@@ -9,14 +9,14 @@
   <div class="footer">
     <div class="footer-top">
       <div class="footer-logo">
-        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/footer/footer-logo.png">
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images-wap/footer/footer-logo.png">
       </div>
       <div class="footer-centent">
         <div class="footer_project">
           <h4 class="title">{{$t('footer.project')}}</h4>
           <ul class="link_list">
             <li @click='GoRouter("app")'><a>NetCloth App</a></li>
-            <li><a>{{$t('footer.Whitepaper')}}</a></li>
+            <li @click='GoRouter("paper")'><a>{{$t('footer.Whitepaper')}}</a></li>
             <li><a>Onepaper</a></li>
           </ul>
         </div>
@@ -81,6 +81,13 @@
       }
       if (val == 'app') {
         window.open('http://chat-app.netcloth.org');
+      }
+      if( val =="paper"){
+        if(localStorage.getItem("language") == "zh"){
+          window.open('https://github.com/netcloth/whitepaper/blob/master/whitepaper_cn.md');
+        }else{
+          window.open('https://github.com/netcloth/whitepaper/blob/master/whitepaper.md');
+        }
       }
     }
 
@@ -169,22 +176,22 @@
     }
 
     .footer-medium {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/footer/medium.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images-wap/footer/medium.png');
       background-size: 100%;
     }
 
     .footer-twier {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/footer/twier.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images-wap/footer/twier.png');
       background-size: 100%;
     }
 
     .footer-github {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images-wap/footer/github.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images-wap/footer/github.png');
       background-size: 100%;
     }
 
     .footer-wordpress {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/footer/wordpress.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images/footer/wordpress.png');
       background-size: 100%;
 
     }

@@ -96,32 +96,32 @@
       .One {
         width: px2rem(102);
         height: px2rem(95);
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/advantage/one.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images/advantage/one.png');
       }
 
       .Two {
         width: px2rem(86);
         height: px2rem(86);
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/advantage/two.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images/advantage/two.png');
       }
 
       .Three {
         width: px2rem(84);
         height: px2rem(95);
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/advantage/three.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images/advantage/three.png');
       }
 
       .Four {
         width: px2rem(94);
         height: px2rem(95);
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/advantage/four.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images/advantage/four.png');
 
       }
 
       .Five {
         width: px2rem(89);
         height: px2rem(102);
-        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.4/dist/images/advantage/five.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.5/dist/images/advantage/five.png');
       }
 
       .Advantage-centent-title {
