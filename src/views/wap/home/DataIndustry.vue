@@ -123,23 +123,23 @@
 
 
     .generate-data {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.6/dist/images/dataindustry/generate-data.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.7/dist/images/dataindustry/generate-data.png')
     }
 
     .storage {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.6/dist/images/dataindustry/storage.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.7/dist/images/dataindustry/storage.png')
     }
 
     .data-change {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.6/dist/images/dataindustry/data-change.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.7/dist/images/dataindustry/data-change.png')
     }
 
     .calculation {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.6/dist/images/dataindustry/calculation.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.7/dist/images/dataindustry/calculation.png')
     }
 
     .data-produc {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.6/dist/images/dataindustry/data-produc.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.7/dist/images/dataindustry/data-produc.png')
     }
   }
 </style>

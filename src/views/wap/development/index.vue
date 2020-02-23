@@ -32,9 +32,9 @@
   })
   export default class development extends Vue {
     private logoUrl = {
-      imgSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.6/dist/images-wap/header/logo-red.png',
-      menuSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.6/dist/images-wap/header/menu-red.png',
-      menuCloseSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.6/dist/images-wap/header/menu-close-red.png',
+      imgSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.7/dist/images-wap/header/logo-red.png',
+      menuSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.7/dist/images-wap/header/menu-red.png',
+      menuCloseSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.7/dist/images-wap/header/menu-close-red.png',
     }
   }
 </script>
