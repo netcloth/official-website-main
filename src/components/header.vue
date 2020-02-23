@@ -38,7 +38,7 @@
 
   @Component
   export default class Header extends Vue {
-    @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.7/dist/images/header/nav-logo.png' }) readonly imgSrc!: string;
+    @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.8//dist/images/header/nav-logo.png' }) readonly imgSrc!: string;
     @Prop({ default: '#ffffff' }) readonly Pcolor!: string;
     // methods
     private ChangLang(value: string): void {
