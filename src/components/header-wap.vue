@@ -23,11 +23,11 @@
       <div class="header-menu-open" v-show='isOpen'>
         <div class="header-menu">
           <div class="header-menu-btn header-menu-btn-close" @click='Open'>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images-wap/header/menu-close.png">
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images-wap/header/menu-close.png">
           </div>
         </div>
         <div class="header-logo">
-          <router-link to="/"><img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images-wap/header/nav-logo.png"></router-link>
+          <router-link to="/"><img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images-wap/header/nav-logo.png"></router-link>
         </div>
         <div class="header-btn">
           <span class="btn-en" @click='ChangLang("en")' v-if='language=="zh"'>EN</span>
@@ -41,7 +41,7 @@
             <li>
               <router-link to="Development">{{$t('header.dev')}}</router-link>
             </li>
-            <li><a>{{$t('header.block')}}</a></li>
+            <li @click='GoBlock'><a>{{$t('header.block')}}</a></li>
             <li @click='GoBlog'><a>{{$t('header.blog')}}</a></li>
             <li>
               <router-link to="starfish">{{$t('header.starfish')}}</router-link>
@@ -62,9 +62,9 @@
     @Prop({
       default: function () {
         return {
-          imgSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images-wap/header/nav-logo.png',
-          menuSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images-wap/header/menu.png',
-          menuCloseSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images-wap/header/menu-close.png',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images-wap/header/nav-logo.png',
+          menuSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images-wap/header/menu.png',
+          menuCloseSrc: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images-wap/header/menu-close.png',
         }
       }
     }) readonly logoUrl!: Object;
@@ -93,6 +93,9 @@
       } else {
         window.open('https://medium.com/@NetCloth');
       }
+    }
+    private GoBlock() {
+      window.open('https://explorer.netcloth.org');
     }
   }
 </script>

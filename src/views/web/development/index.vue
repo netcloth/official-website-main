@@ -7,7 +7,7 @@
  -->
 <template>
   <div class="development">
-    <Header imgSrc='https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images/development/logo-red.png' Pcolor='#17213C' />
+    <Header imgSrc='https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/development/logo-red.png' Pcolor='#17213C' />
     <devHome />
     <div class="footer">
       <Footer />

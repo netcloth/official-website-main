@@ -118,29 +118,29 @@
 
 
     .generate-data {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images/dataindustry/generate-data.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/dataindustry/generate-data.png')
     }
 
     .storage {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images/dataindustry/storage.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/dataindustry/storage.png')
     }
 
     .data-change {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images/dataindustry/data-change.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/dataindustry/data-change.png')
     }
 
     .calculation {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images/dataindustry/calculation.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/dataindustry/calculation.png')
     }
 
     .data-produc {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images/dataindustry/data-produc.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/dataindustry/data-produc.png')
     }
 
     .DataIndustry-list-line {
       width: 97px;
       height: 7px;
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.1.9/dist/images/dataindustry/line.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/dataindustry/line.png');
       background-size: 100%;
       margin-top: 52px;
       margin-left: -75px;
