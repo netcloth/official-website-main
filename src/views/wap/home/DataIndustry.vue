@@ -38,13 +38,7 @@
           <div class="DataIndustry-list-news">{{$t('dataIn.calculationNew')}}</div>
         </div>
       </li>
-      <li>
-        <div class="DataIndustry-list-img data-produc"></div>
-        <div class="DataIndustry-list-centent">
-          <div class="DataIndustry-list-title">{{$t('dataIn.dataProducTitle')}}</div>
-          <div class="DataIndustry-list-news">{{$t('dataIn.dataProducNew')}}</div>
-        </div>
-      </li>
+
     </ul>
   </div>
 </template>
@@ -60,7 +54,7 @@
   @import "../../../styles/index.scss";
 
   .DataIndustry {
-    height: px2rem(1236);
+    height: px2rem(1036);
     text-align: center;
     background: rgba(255, 255, 255, 1);
     padding-top: px2rem(100);
@@ -123,23 +117,23 @@
 
 
     .generate-data {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/dataindustry/generate-data.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/dataindustry/generate-data.png')
     }
 
     .storage {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/dataindustry/storage.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/dataindustry/storage.png')
     }
 
     .data-change {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/dataindustry/data-change.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/dataindustry/data-change.png')
     }
 
     .calculation {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/dataindustry/calculation.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/dataindustry/calculation.png')
     }
 
     .data-produc {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/dataindustry/data-produc.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/dataindustry/data-produc.png')
     }
   }
 </style>

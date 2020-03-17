@@ -20,7 +20,7 @@
         <li>
           <router-link to="ecosystem" :style="{ color:Pcolor}">{{$t('header.ecology')}}</router-link>
         </li>
-        <li>
+        <li> 
           <router-link to="Development" :style="{ color:Pcolor}">{{$t('header.dev')}}</router-link>
         </li>
         <li @click='GoBlock' class="hover"><a title="" :style="{ color:Pcolor}">{{$t('header.block')}}</a></li>
@@ -38,7 +38,7 @@
 
   @Component
   export default class Header extends Vue {
-    @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/header/nav-logo.png' }) readonly imgSrc!: string;
+    @Prop({ default: 'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/header/nav-logo.png' }) readonly imgSrc!: string;
     @Prop({ default: '#ffffff' }) readonly Pcolor!: string;
     // methods
     private ChangLang(value: string): void {

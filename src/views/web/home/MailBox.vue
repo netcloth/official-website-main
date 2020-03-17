@@ -63,7 +63,7 @@
     width: 100%;
     height: 500px;
     background: rgba(249, 250, 253, 1);
-    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/mail/mailbox.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/mail/mailbox.png');
     background-repeat: no-repeat;
     text-align: center;
     padding: 133px 0;

@@ -102,7 +102,7 @@ export default {
 .banner{
   width:100%;
   height:500px;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/starfish/rule_banner.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/starfish/rule_banner.png");
   background-size: cover;
   background-position:center;
   min-width:1100px;
@@ -240,7 +240,7 @@ export default {
 .rule_row1_left1{
   width:68px;
   height:70px;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/images/starfish/boundy_icon.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/starfish/boundy_icon.png");
   background-size:100% 100%;
 }
 .rule_row1_left2{

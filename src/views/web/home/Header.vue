@@ -44,13 +44,13 @@
     private GoUrl(url){
       if(url=="paper"){
         if(localStorage.getItem("language") == "zh"){
-          window.open("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/docs/whitepaper_cn.pdf");
+          window.open("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/docs/whitepaper_cn.pdf");
         }else{
           window.open('https://github.com/netcloth/whitepaper/blob/master/whitepaper.md');
         }
       }if(url == "eco"){
         if(localStorage.getItem("language") == "zh"){
-          window.open("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.0/dist/docs/EcologicalConstruction_cn.pdf");
+          window.open("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/docs/EcologicalConstruction_cn.pdf");
         }else{
           window.open("https://github.com/netcloth/whitepaper/blob/master/EcologicalConstruction.md");
         }
