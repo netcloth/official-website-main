@@ -120,7 +120,7 @@
     }
 
     &-centent {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.3/dist/images-wap/home/Map.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.4/dist/images-wap/home/Map.png');
       background-size: 100%;
       background-repeat: no-repeat;
       background-position-y: 50%;

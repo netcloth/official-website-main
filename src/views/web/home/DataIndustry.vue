@@ -112,29 +112,29 @@
 
 
     .generate-data {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.3/dist/images/dataindustry/generate-data.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/dataindustry/generate-data.png')
     }
 
     .storage {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.3/dist/images/dataindustry/storage.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/dataindustry/storage.png')
     }
 
     .data-change {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.3/dist/images/dataindustry/data-change.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/dataindustry/data-change.png')
     }
 
     .calculation {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.3/dist/images/dataindustry/calculation.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/dataindustry/calculation.png')
     }
 
     .data-produc {
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.3/dist/images/dataindustry/data-produc.png')
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/dataindustry/data-produc.png')
     }
 
     .DataIndustry-list-line {
       width: 97px;
       height: 7px;
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.3/dist/images/dataindustry/line.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/dataindustry/line.png');
       background-size: 100%;
       margin-top: 52px;
       margin-left: -75px;
@@ -147,7 +147,7 @@
         border-radius: 50%;
         position: absolute;
         left: 0px;
-        animation: move 10s infinite;
+        animation: move 7s infinite;
         z-index: 2;
       }
     }
@@ -159,32 +159,25 @@
     }
 
 
-    18.18% {
+    25% {
       transform: translate(90px, 0px);
     }
 
-    27.27% {
+    37.5% {
       transform: translate(236px, 0px);
     }
 
-    45.45% {
+    62.49% {
       transform: translate(327px, 0px);
     }
 
-    54.54% {
+    74.99% {
       transform: translate(476px, 0px);
     }
 
-    72.72% {
+    100% {
       transform: translate(565px, 0px);
     }
 
-    81.81% {
-      transform: translate(740px, 0px);
-    }
-
-    100% {
-      transform: translate(833px, 0px);
-    }
   }
 </style>
