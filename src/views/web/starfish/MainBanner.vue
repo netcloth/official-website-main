@@ -51,14 +51,14 @@ export default {
   width:100%;
   height:700px;
   min-height:560px;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.4/dist/images/starfish/main_banner.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images/starfish/main_banner.png");
   background-size: cover;
   background-position:center;
   padding-bottom:100px;
   min-width:1100px;
 }
 .MainBannerEn{
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.4/dist/images/starfish/main_banner_en.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images/starfish/main_banner_en.png");
   background-size: cover;
   background-position:center;
 

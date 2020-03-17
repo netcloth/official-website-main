@@ -15,7 +15,7 @@ import Vue from 'vue'
         <div class="col1">
           <div class="row1">{{$t("footer_new.item11")}}</div>
           <a class="row2"  href="https://chat-app.netcloth.org">{{$t("footer_new.item12")}}</a>
-          <a class="row3" :href="GetLanguage()=='zh'?'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.4/dist/docs/whitepaper_cn.pdf':'https://github.com/netcloth/whitepaper/blob/master/whitepaper.md'" target="_blank">{{$t("footer_new.item13")}}</a>
+          <a class="row3" :href="GetLanguage()=='zh'?'https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/docs/whitepaper_cn.pdf':'https://github.com/netcloth/whitepaper/blob/master/whitepaper.md'" target="_blank">{{$t("footer_new.item13")}}</a>
           <a class="row4"  target="_blank">{{$t("footer_new.item14")}}</a>
         </div>
         <div class="col2">
@@ -115,7 +115,7 @@ export default {
 .logo{
   width:166px;
   height:44px;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.4/dist/images/footer/logo.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images/footer/logo.png");
   background-size:100% 100%;
 }
 .left_2{
@@ -130,24 +130,24 @@ export default {
 }
 .sublogo_1{
   @extend .sublogo;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.4/dist/images/footer/footer_sublogo_image1.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images/footer/footer_sublogo_image1.png");
   background-size:100% 100%;
 }
 .sublogo_2{
   @extend .sublogo;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.4/dist/images/footer/footer_sublogo_image2.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images/footer/footer_sublogo_image2.png");
   background-size:100% 100%;
   margin-left:24px;
 }
 .sublogo_3{
   @extend .sublogo;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.4/dist/images/footer/footer_sublogo_image3.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images/footer/footer_sublogo_image3.png");
   background-size:100% 100%;
   margin-left:24px;
 }
 .sublogo_4{
   @extend .sublogo;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.4/dist/images/footer/footer_sublogo_image4.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images/footer/footer_sublogo_image4.png");
   background-size:100% 100%;
   margin-left:24px;
 }
@@ -224,11 +224,11 @@ export default {
 .codebar{
   width:128px;
   height:128px;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.4/dist/images/footer/community_cn.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images/footer/community_cn.png");
   background-size:100% 100%;
 }
 .codebar_en{
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.4/dist/images/footer/community_en.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images/footer/community_en.png");
   background-size:100% 100%;
 }
 </style>

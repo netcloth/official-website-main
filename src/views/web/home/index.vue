@@ -54,7 +54,7 @@
 </script>
 <style lang="scss" scoped>
   .home-pc {
-    min-width: 1280px;
+    min-width: 1442px;
   }
 
   .footer {
