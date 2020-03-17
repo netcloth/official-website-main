@@ -131,7 +131,7 @@ export default {
 .icon{
   height:50px;
   width:49px;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.1/dist/images/starfish/boundy_icon.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.3/dist/images/starfish/boundy_icon.png");
   background-size: 100% 100%;
 }
 .item1_sub_describe{
