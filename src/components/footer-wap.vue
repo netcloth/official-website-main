@@ -9,7 +9,7 @@
   <div class="footer">
     <div class="footer-top">
       <div class="footer-logo">
-        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/footer/footer-logo.png">
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/footer/footer-logo.png">
       </div>
       <div class="footer-centent">
         <div class="footer_project">
@@ -84,7 +84,7 @@
       }
       if( val =="paper"){
         if(localStorage.getItem("language") == "zh"){
-          window.open('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/docs/whitepaper_cn.pdf');
+          window.open('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/docs/whitepaper_cn.pdf');
         }else{
           window.open('https://github.com/netcloth/whitepaper/blob/master/whitepaper.md');
         }
@@ -176,22 +176,22 @@
     }
 
     .footer-medium {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/footer/medium.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/footer/medium.png');
       background-size: 100%;
     }
 
     .footer-twier {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/footer/twier.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/footer/twier.png');
       background-size: 100%;
     }
 
     .footer-github {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/footer/github.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/footer/github.png');
       background-size: 100%;
     }
 
     .footer-wordpress {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images/footer/wordpress.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images/footer/wordpress.png');
       background-size: 100%;
 
     }

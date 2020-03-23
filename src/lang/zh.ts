@@ -280,5 +280,12 @@ export default {
         rule_describe3:'3. NCH是非证券类数字资产，NCH不锚定股权、所有权等证券类权益；',
         rule_describe4:'4. NetCloth基金会不保证NCH的市场价值。',
         rule_describe5:'* 活动最终解释权归NetCloth基金会所有',
+      },
+      video:{
+          src:"//player.bilibili.com/player.html?aid=97622432&cid=166296798&page=1",
+          video_right_title:"NetCloth——搭建个人网络",
+          video_right_discribe:"NetCloth项目为搭建个人网络而生，搭建你的个人网络，成为你朋友身边的海星节点。",
+          doc_src:"https://docs.netcloth.org/introduction/",
+          video_right_btn:"立刻搭建你的个人网络"
       }
 };

@@ -52,56 +52,56 @@
         <div class="Ecosystem-architecture-center-centent" @click='ChangeSelected("user")'>
           <div class="Ecosystem-architecture-center-centent-img">
             <span>{{$t('EcosystemArch.titleO')}}</span>
-            <img class="user" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/user.png">
+            <img class="user" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/user.png">
           </div>
           <div class="Ecosystem-architecture-center-centent-message" v-if='check=="user"'>
             {{$t('EcosystemArch.messageO')}}
           </div>
           <div class="Ecosystem-architecture-center-centent-btn">
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/collapse.png" alt="" srcset="" v-if='check=="user"'>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/down.png" alt="" srcset="" v-else>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/collapse.png" alt="" srcset="" v-if='check=="user"'>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/down.png" alt="" srcset="" v-else>
           </div>
         </div>
         <div class="Ecosystem-architecture-center-centent" @click='ChangeSelected("application")'>
           <div class="Ecosystem-architecture-center-centent-img">
             <span>{{$t('EcosystemArch.titleT')}}</span>
-            <img class="application" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/application.png" v-show='language=="zh"'>
-            <img class="application" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/application-en.png" v-show='language=="en"'>
+            <img class="application" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/application.png" v-show='language=="zh"'>
+            <img class="application" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/application-en.png" v-show='language=="en"'>
           </div>
           <div class="Ecosystem-architecture-center-centent-message" v-if='check=="application"'>
             {{$t('EcosystemArch.messageT')}}
           </div>
           <div class="Ecosystem-architecture-center-centent-btn">
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/collapse.png" alt="" srcset="" v-if='check=="application"'>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/down.png" alt="" srcset="" v-else>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/collapse.png" alt="" srcset="" v-if='check=="application"'>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/down.png" alt="" srcset="" v-else>
           </div>
         </div>
         <div class="Ecosystem-architecture-center-centent" @click='ChangeSelected("nodeLayer")'>
           <div class="Ecosystem-architecture-center-centent-img">
             <span>{{$t('EcosystemArch.titleS')}}</span>
-            <img class="nodeLayer" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/nodeLayer.png" v-show='language=="zh"'>
-            <img class="nodeLayer" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/nodeLayer-en.png" v-show='language=="en"'>
+            <img class="nodeLayer" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/nodeLayer.png" v-show='language=="zh"'>
+            <img class="nodeLayer" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/nodeLayer-en.png" v-show='language=="en"'>
           </div>
           <div class="Ecosystem-architecture-center-centent-message" v-if='check=="nodeLayer"'>
             {{$t('EcosystemArch.messageS')}}
           </div>
           <div class="Ecosystem-architecture-center-centent-btn">
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/collapse.png" alt="" srcset="" v-if='check=="nodeLayer"'>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/down.png" alt="" srcset="" v-else>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/collapse.png" alt="" srcset="" v-if='check=="nodeLayer"'>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/down.png" alt="" srcset="" v-else>
           </div>
         </div>
         <div class="Ecosystem-architecture-center-centent" @click='ChangeSelected("basic")'>
           <div class="Ecosystem-architecture-center-centent-img">
             <span>{{$t('EcosystemArch.titleF')}}</span>
-            <img class="basic" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/basic.png" v-show='language=="zh"'>
-            <img class="basic" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/basic-en.png" v-show='language=="en"'>
+            <img class="basic" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/basic.png" v-show='language=="zh"'>
+            <img class="basic" src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/basic-en.png" v-show='language=="en"'>
           </div>
           <div class="Ecosystem-architecture-center-centent-message" v-if='check=="basic"'>
             {{$t('EcosystemArch.messageF')}}
           </div>
           <div class="Ecosystem-architecture-center-centent-btn">
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/collapse.png" alt="" srcset="" v-if='check=="basic"'>
-            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/down.png" alt="" srcset="" v-else>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/collapse.png" alt="" srcset="" v-if='check=="basic"'>
+            <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/down.png" alt="" srcset="" v-else>
           </div>
         </div>
       </div>
@@ -157,7 +157,7 @@
     .Ecosystem-header {
       height: px2rem(450);
       text-align: center;
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/bg.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/bg.png');
       background-size: 100%;
       padding-top: px2rem(180);
 
@@ -225,32 +225,32 @@
         }
 
         .account {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/account.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/account.png');
           background-size: px2rem(50) px2rem(50);
         }
 
         .encryption {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/encryption.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/encryption.png');
           background-size: px2rem(45) px2rem(50);
         }
 
         .Blockchain {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/Blockchain.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/Blockchain.png');
           background-size: px2rem(47) px2rem(49);
         }
 
         .trustworthy {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/trustworthy.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/trustworthy.png');
           background-size: px2rem(47) px2rem(47);
         }
 
         .calculation {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/calculation.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/calculation.png');
           background-size: px2rem(50) px2rem(50);
         }
 
         .link {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/link.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/link.png');
           background-size: px2rem(47) px2rem(47);
         }
 
@@ -386,7 +386,7 @@
           text-align: left;
           border-radius: px2rem(20);
           box-shadow: 0px 10px 10px 2px rgba(232, 234, 240, 0.75);
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/Netcloth-APP.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/Netcloth-APP.png');
           background-repeat: no-repeat;
           background-size: 100%;
 
@@ -429,12 +429,12 @@
         }
 
         .js1 {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/js1.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/js1.png');
           margin-right: px2rem(30);
         }
 
         .js2 {
-          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.5/dist/images-wap/ecosystem/js2.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/ecosystem/js2.png');
         }
 
 

@@ -282,4 +282,11 @@ export default {
         rule_describe4:'4. NetCloth Foundation does not guarantee the market value of NCH.',
         rule_describe5:'* The NetCloth Foundation reserves the final interpretation of NetCloth Starfish Project.',
       },
+      video:{
+          src:"https://www.youtube.com/embed/yAzlJ_0ET9E",
+          video_right_title:"NetCloth--Personal Network",
+          video_right_discribe:"NetCloth project was born to build a Personal network. Building your personal network and deploy a starfish node around your friends.",
+          doc_src:"https://docs.netcloth.org/en/introduction/",
+          video_right_btn:"Deploy Your Personal Network"
+      }
 };
