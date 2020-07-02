@@ -53,6 +53,7 @@
         <div class="footer-medium" @click='GoRouter("medium")'></div>
         <div class="footer-twier" @click='GoRouter("twier")'></div>
         <div class="footer-github" @click='GoRouter("github")'></div>
+        <div class="footer-reddit" @click='GoRouter("reddit")'></div>
         <div class="footer-wordpress" @click='GoRouter("wordpress")'></div>
       </div>
     </div>
@@ -88,6 +89,10 @@
         }else{
           window.open('https://github.com/netcloth/whitepaper/blob/master/whitepaper.md');
         }
+      }
+
+      if ( val == 'reddit') {
+        window.open(' https://www.reddit.com/r/NetCloth');
       }
     }
 
@@ -172,7 +177,7 @@
     }
 
     .footer-list div:not(:last-child) {
-      margin-right: px2rem(57);
+      margin-right: px2rem(40);
     }
 
     .footer-medium {
@@ -190,10 +195,14 @@
       background-size: 100%;
     }
 
+    .footer-reddit {
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images/footer/reddit.png');
+      background-size: 100%;
+    }
+
     .footer-wordpress {
       background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images/footer/wordpress.png');
       background-size: 100%;
-
     }
 
     .footer-bottom {

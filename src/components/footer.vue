@@ -8,6 +8,7 @@ import Vue from 'vue'
           <a class="sublogo_1" href='https://medium.com/@NetCloth' target="_blank"></a>
           <a class="sublogo_2" href='https://twitter.com/NetCloth' target="_blank"></a>
           <a class="sublogo_3" href='https://github.com/netcloth' target="_blank"></a>
+          <a class="sublogo_5" href='https://www.reddit.com/r/NetCloth' target="_blank"></a>
           <a class="sublogo_4" href="mailto:contact@netcloth.org"></a>
         </div>
       </div>
@@ -151,6 +152,15 @@ export default {
   background-size:100% 100%;
   margin-left:24px;
 }
+
+.sublogo_5 {
+  @extend .sublogo;
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images/footer/reddit.png");
+  background-size:100% 100%;
+  margin-left:24px;
+}
+
+
 .foot_right{
   float:right;
 }

@@ -19,8 +19,8 @@
           <div class="RouteMap-centent-m">{{$t('routeMap.t4')}}</div>
         </li>
         <li :class="{ 'selected': selectedIndex==5}">
-          <div class="RouteMap-centent-y">{{$t('routeMap.y6')}}</div>
-          <div class="RouteMap-centent-m">{{$t('routeMap.t6')}}</div>
+           <div class="RouteMap-centent-y">{{$t('routeMap.y7')}}</div>
+          <div class="RouteMap-centent-m">{{$t('routeMap.t7')}}</div>
         </li>
       </ul>
       <ul class="RouteMap-centent-center">
@@ -78,8 +78,8 @@
           <div class="RouteMap-centent-m">{{$t('routeMap.t5')}}</div>
         </li>
         <li :class="{ 'selected': selectedIndex==6}">
-          <div class="RouteMap-centent-y">{{$t('routeMap.y7')}}</div>
-          <div class="RouteMap-centent-m">{{$t('routeMap.t7')}}</div>
+          <div class="RouteMap-centent-y">{{$t('routeMap.y6')}}</div>
+          <div class="RouteMap-centent-m">{{$t('routeMap.t6')}}</div>
         </li>
       </ul>
     </div>
