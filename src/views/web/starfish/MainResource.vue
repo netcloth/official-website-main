@@ -94,24 +94,24 @@ export default {
 }
 .item_image1{
   @extend .item_image;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images/starfish/resource_image1.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/images/starfish/resource_image1.png");
   background-size:100% 100%;
   cursor: pointer;
 }
 .item_image2{
   @extend .item_image;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images/starfish/resource_image2.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/images/starfish/resource_image2.png");
   background-size:100% 100%;
   cursor: pointer;
 }
 .item_image3{
   @extend .item_image;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images/starfish/resource_image3.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/images/starfish/resource_image3.png");
   background-size:100% 100%;
 }
 .item_image4{
   @extend .item_image;
-  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images/starfish/resource_image4.png");
+  background:url("https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/images/starfish/resource_image4.png");
   background-size:100% 100%;
   
 }
