@@ -145,7 +145,7 @@ export default {
     },
     EcosystemApp: {
         title: 'Applications',
-        message: 'NetCloth App is an privacy-protected P2P IM App,with features of encrypted identities,encrypted communication and data security.',
+        message: 'NetCloth, a portal integrating search engines, communications, communities, DApps, and asset tools.In the future, you only need to download the NetCloth APP to experience various services that can cover the mobile Internet.',
         js: 'Developing...',
         btn: 'How to develop',
     },

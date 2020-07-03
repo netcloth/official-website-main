@@ -425,11 +425,11 @@
           }
 
           &-message {
-            width: 290px;
+            width: 300px;
             font-size: 12px;
             font-weight: normal;
             color: rgba(131, 134, 144, 1);
-            line-height: 18px;
+            line-height: 15px;
           }
         }
 

@@ -145,7 +145,7 @@ export default {
     },
     EcosystemApp: {
         title: '应用生态',
-        message: 'NetCloth APP是一款保护数据安全的点对点即时通信APP，具有加密身份、加密通信、加密存储等特点。',
+        message: 'NetCloth APP 是搜索引擎、通信、社区、小应用（DApp）、资产工具为一体的门户，未来您仅需要下载NetCloth APP，就能体验到可覆盖移动互联网产业的各类服务。',
         js: '建设中…',
         btn: '了解Dapp开发',
     },

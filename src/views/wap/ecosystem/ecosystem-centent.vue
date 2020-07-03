@@ -409,7 +409,7 @@
             font-size: px2rem(28);
             font-weight: normal;
             color: rgba(131, 134, 144, 1);
-            line-height: px2rem(39);
+            line-height: px2rem(30);
             margin-top: px2rem(17);
           }
         }
