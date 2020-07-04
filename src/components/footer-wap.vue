@@ -9,7 +9,7 @@
   <div class="footer">
     <div class="footer-top">
       <div class="footer-logo">
-        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/footer/footer-logo.png">
+        <img src="https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/images-wap/footer/footer-logo.png">
       </div>
       <div class="footer-centent">
         <div class="footer_project">
@@ -53,6 +53,7 @@
         <div class="footer-medium" @click='GoRouter("medium")'></div>
         <div class="footer-twier" @click='GoRouter("twier")'></div>
         <div class="footer-github" @click='GoRouter("github")'></div>
+        <div class="footer-reddit" @click='GoRouter("reddit")'></div>
         <div class="footer-wordpress" @click='GoRouter("wordpress")'></div>
       </div>
     </div>
@@ -84,10 +85,14 @@
       }
       if( val =="paper"){
         if(localStorage.getItem("language") == "zh"){
-          window.open('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/docs/whitepaper_cn.pdf');
+          window.open('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/docs/whitepaper_cn.pdf');
         }else{
           window.open('https://github.com/netcloth/whitepaper/blob/master/whitepaper.md');
         }
+      }
+
+      if ( val == 'reddit') {
+        window.open(' https://www.reddit.com/r/NetCloth');
       }
     }
 
@@ -172,28 +177,32 @@
     }
 
     .footer-list div:not(:last-child) {
-      margin-right: px2rem(57);
+      margin-right: px2rem(40);
     }
 
     .footer-medium {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/footer/medium.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/images-wap/footer/medium.png');
       background-size: 100%;
     }
 
     .footer-twier {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/footer/twier.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/images-wap/footer/twier.png');
       background-size: 100%;
     }
 
     .footer-github {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images-wap/footer/github.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/images-wap/footer/github.png');
+      background-size: 100%;
+    }
+
+    .footer-reddit {
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/images/footer/reddit.png');
       background-size: 100%;
     }
 
     .footer-wordpress {
-      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images/footer/wordpress.png');
+      background: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/images/footer/wordpress.png');
       background-size: 100%;
-
     }
 
     .footer-bottom {

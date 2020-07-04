@@ -19,8 +19,8 @@
           <div class="RouteMap-centent-m">{{$t('routeMap.t4')}}</div>
         </li>
         <li :class="{ 'selected': selectedIndex==5}">
-          <div class="RouteMap-centent-y">{{$t('routeMap.y6')}}</div>
-          <div class="RouteMap-centent-m">{{$t('routeMap.t6')}}</div>
+           <div class="RouteMap-centent-y">{{$t('routeMap.y7')}}</div>
+          <div class="RouteMap-centent-m">{{$t('routeMap.t7')}}</div>
         </li>
       </ul>
       <ul class="RouteMap-centent-center">
@@ -78,8 +78,8 @@
           <div class="RouteMap-centent-m">{{$t('routeMap.t5')}}</div>
         </li>
         <li :class="{ 'selected': selectedIndex==6}">
-          <div class="RouteMap-centent-y">{{$t('routeMap.y7')}}</div>
-          <div class="RouteMap-centent-m">{{$t('routeMap.t7')}}</div>
+          <div class="RouteMap-centent-y">{{$t('routeMap.y6')}}</div>
+          <div class="RouteMap-centent-m">{{$t('routeMap.t6')}}</div>
         </li>
       </ul>
     </div>
@@ -113,7 +113,7 @@
       width: 1099px;
       height: 646px;
       text-align: center;
-      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.6/dist/images/routeMap/Map.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/netcloth/official-website-main@v0.2.7/dist/images/routeMap/Map.png');
       margin: 0 auto;
       padding-top: 88px;
 
